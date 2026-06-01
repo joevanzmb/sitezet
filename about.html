@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | Sitezet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            900: '#0f172a',
+                        }
+                    },
+                    animation: {
+                        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'wiggle': 'wiggle 3s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, filter: 'drop-shadow(0 0 8px rgba(20, 184, 166, 0.8))' },
+                            '50%': { opacity: .7, filter: 'drop-shadow(0 0 2px rgba(20, 184, 166, 0.3))' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-5deg)' },
+                            '50%': { transform: 'rotate(5deg)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        .typing-cursor::after {
+            content: '|';
+            animation: blink 1s step-end infinite;
+            color: #0d9488;
+            font-weight: 300;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Navigation Header -->
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300 pt-6 px-6 lg:px-12" id="navbar">
+        <!-- Desktop Floating Nav Card -->
+        <div
+            class="hidden lg:grid grid-cols-5 items-center justify-items-center w-full max-w-[95%] lg:max-w-5xl xl:max-w-6xl mx-auto bg-white/90 backdrop-blur-md px-8 md:px-12 xl:px-16 py-5 rounded-full border border-gray-200/50 shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+            <a href="about.html" data-i18n="nav_about"
+                class="fade-lang text-base font-semibold text-teal-600 transition-colors w-full text-center">Tentang</a>
+            <a href="services.html" data-i18n="nav_services"
+                class="fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Layanan</a>
+
+            <!-- Logo in the middle (perfectly centered) -->
+            <a href="index.html"
+                class="text-3xl md:text-4xl font-extrabold tracking-tight group transition-transform hover:scale-105 duration-300 w-full text-center">
+                <span class="text-slate-900">site</span><span class="text-teal-600">zet</span>
+            </a>
+
+            <a href="works.html" data-i18n="nav_project"
+                class="fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Proyek</a>
+            <a href="contact.html" data-i18n="nav_contact"
+                class="fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Kontak</a>
+        </div>
+
+        <!-- Mobile Floating Nav Card -->
+        <div
+            class="lg:hidden flex items-center justify-between w-full bg-white/90 backdrop-blur-md px-6 py-4 rounded-full border border-gray-200/50 shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+            <a href="index.html"
+                class="text-2xl font-bold tracking-tight group transition-transform hover:scale-105 duration-300">
+                <span class="text-slate-900">site</span><span class="text-teal-600">zet</span>
+            </a>
+
+            <button id="mobile-menu-btn" class="text-slate-900">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Language Toggle (Desktop) -->
+        <div class="hidden lg:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 z-10">
+            <button onclick="toggleLang()"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md hover:border-teal-200 transition-all text-xs font-bold">
+                <span class="lang-btn" data-lang="id">ID</span>
+                <span class="text-gray-300">/</span>
+                <span class="lang-btn text-gray-400" data-lang="en">EN</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-[60] lg:hidden bg-slate-900/40 backdrop-blur-sm">
+        <div id="mobile-menu-drawer" class="absolute top-0 right-0 w-[80%] max-w-sm h-full bg-white shadow-2xl">
+            <div class="flex flex-col h-full pt-28 px-10">
+                <div class="flex flex-col space-y-7 text-lg font-semibold">
+                    <a href="index.html" data-i18n="nav_home"
+                        class="fade-lang text-gray-500 hover:text-teal-600 transition-colors">Home</a>
+                    <a href="about.html" data-i18n="nav_about"
+                        class="fade-lang text-gray-500 hover:text-teal-600 transition-colors">Tentang</a>
+                    <a href="services.html" data-i18n="nav_services"
+                        class="fade-lang text-gray-500 hover:text-teal-600 transition-colors">Layanan</a>
+                    <a href="works.html" data-i18n="nav_project"
+                        class="fade-lang text-gray-500 hover:text-teal-600 transition-colors">Proyek</a>
+                    <a href="contact.html" data-i18n="nav_contact"
+                        class="fade-lang text-gray-500 hover:text-teal-600 transition-colors">Kontak</a>
+                </div>
+                <div class="mt-12 pt-8 border-t border-gray-100">
+                    <div class="flex items-center gap-3">
+                        <button onclick="toggleLang()"
+                            class="flex items-center gap-2 px-4 py-2.5 rounded-full border border-gray-200 hover:border-teal-200 transition-all text-sm font-bold">
+                            <span class="lang-btn" data-lang="id">ID</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="lang-btn text-gray-400" data-lang="en">EN</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center pt-36 pb-20 overflow-hidden bg-slate-50">
+        <div
+            class="absolute top-0 right-0 -mr-40 -mt-40 w-[600px] h-[600px] bg-teal-50 rounded-full blur-[100px] opacity-70 pointer-events-none">
+        </div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span data-i18n="abt_badge"
+                class="fade-lang inline-block px-4 py-1.5 rounded-full bg-teal-50 border border-teal-100 text-teal-600 font-semibold text-sm mb-6"
+                data-aos="fade-up">TENTANG KAMI</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6"
+                data-aos="fade-up" data-aos-delay="100">
+                <span data-i18n="abt_title_1" class="fade-lang">Kami Merancang</span> <br class="hidden md:block" />
+                <span data-i18n="abt_title_2" class="fade-lang"><span class="text-teal-600">Ekosistem Digital</span>
+                    Berkelas.</span>
+            </h1>
+            <p data-i18n="abt_desc"
+                class="fade-lang text-lg md:text-xl text-gray-500 font-light leading-relaxed max-w-2xl mx-auto"
+                data-aos="fade-up" data-aos-delay="200">
+                Sitezet adalah digital product studio yang berfokus pada rekayasa teknologi berkualitas tinggi dan
+                arsitektur visual premium. Kami mendefinisikan ulang cara brand berinteraksi di dunia digital.
+            </p>
+        </div>
+    </section>
+
+    <!-- Core Values / Pillars -->
+    <section class="py-24 bg-white relative z-10 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all hover:-translate-y-1 duration-300"
+                    data-aos="fade-up">
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center mb-6">
+                        <i data-lucide="code-2" class="w-6 h-6 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="abt_val_1_title" class="fade-lang font-bold text-xl text-slate-900 mb-4">Kode Bersih
+                        & Murni</h3>
+                    <p data-i18n="abt_val_1_desc" class="fade-lang text-gray-500 font-light leading-relaxed">
+                        Kami menulis kode dengan struktur kelas dunia. Kecepatan loading super cepat, performa maksimal,
+                        dan arsitektur yang mudah dirawat di masa depan adalah jaminan kami.
+                    </p>
+                </div>
+                <!-- Value 2 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all hover:-translate-y-1 duration-300"
+                    data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center mb-6">
+                        <i data-lucide="palette" class="w-6 h-6 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="abt_val_2_title" class="fade-lang font-bold text-xl text-slate-900 mb-4">Desain
+                        Editorial Premium</h3>
+                    <p data-i18n="abt_val_2_desc" class="fade-lang text-gray-500 font-light leading-relaxed">
+                        Desain kami tidak kaku dan generik. Setiap proyek dirancang dengan visual yang menakjubkan,
+                        tipografi editorial yang megah, serta transisi animasi mikro yang hidup.
+                    </p>
+                </div>
+                <!-- Value 3 -->
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all hover:-translate-y-1 duration-300"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="abt_val_3_title" class="fade-lang font-bold text-xl text-slate-900 mb-4">Skalabilitas
+                        Maksimal</h3>
+                    <p data-i18n="abt_val_3_desc" class="fade-lang text-gray-500 font-light leading-relaxed">
+                        Aplikasi yang kami bangun siap menangani ribuan transaksi secara bersamaan tanpa kendala.
+                        Mengintegrasikan teknologi cloud termutakhir untuk performa kokoh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Vision Section -->
+    <section class="relative py-32 overflow-hidden border-t border-slate-100 bg-slate-50">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop"
+                alt="" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-50/97 via-white/95 to-slate-50/97"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto px-6 lg:px-12 relative z-10 text-center" data-aos="fade-up"
+            data-aos-duration="1000">
+            <div
+                class="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center mb-8 border border-teal-100 shadow-sm">
+                <i data-lucide="quote" class="w-10 h-10 text-teal-600 animate-pulse-glow"></i>
+            </div>
+            <h3 data-i18n="vis_quote"
+                class="fade-lang text-3xl md:text-5xl font-light leading-tight text-slate-900 mb-10 text-white">
+                "Kami tidak hanya menulis kode; kami mengarsiteki ekosistem digital. Dedikasi kami adalah pada kualitas
+                kode murni dan desain ikonik yang mengangkat brand Anda di atas keramaian."
+            </h3>
+            <div
+                class="inline-block bg-white px-8 py-4 rounded-full border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                <p class="font-bold text-lg text-slate-900">The Founder</p>
+                <p data-i18n="vis_role" class="fade-lang text-teal-600 font-medium text-sm">Lead Engineer & Visionary
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-900 text-white pt-24 pb-10 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-20">
+                <div class="max-w-md" data-aos="fade-right">
+                    <h4 data-i18n="ft_title"
+                        class="fade-lang text-4xl sm:text-5xl font-light leading-tight text-gray-300 mb-8">
+                        Siap membangun sesuatu yang <span class="text-white font-bold">ikonik</span> bersama?
+                    </h4>
+                    <a href="contact.html"
+                        class="group inline-flex items-center gap-3 bg-teal-500 hover:bg-teal-600 text-slate-900 font-semibold px-8 py-4 rounded-full transition-all hover:shadow-lg hover:shadow-teal-500/20">
+                        <span data-i18n="ft_btn" class="fade-lang">Mulai proyek bersama</span>
+                        <div
+                            class="w-6 h-6 rounded-full bg-white flex items-center justify-center transition-transform group-hover:translate-x-1">
+                            <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-900"></i>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="flex gap-16 lg:gap-24" data-aos="fade-left" data-aos-delay="200">
+                    <div>
+                        <h5 data-i18n="ft_dir"
+                            class="fade-lang text-teal-400 font-bold mb-6 uppercase tracking-wider text-xs">Direktori
+                        </h5>
+                        <ul class="space-y-4 font-light text-gray-400">
+                            <li><a href="index.html" data-i18n="nav_home"
+                                    class="fade-lang hover:text-white transition-colors">Home</a></li>
+                            <li><a href="services.html" data-i18n="nav_services"
+                                    class="fade-lang hover:text-white transition-colors">Layanan</a></li>
+                            <li><a href="about.html" data-i18n="nav_about"
+                                    class="fade-lang hover:text-white transition-colors">Tentang</a></li>
+                            <li><a href="works.html" data-i18n="nav_project"
+                                    class="fade-lang hover:text-white transition-colors">Proyek</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 data-i18n="ft_soc"
+                            class="fade-lang text-teal-400 font-bold mb-6 uppercase tracking-wider text-xs">Social</h5>
+                        <ul class="space-y-4 font-light text-gray-400">
+                            <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                        data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                        data-lucide="instagram" class="w-4 h-4"></i> Instagram</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                        data-lucide="github" class="w-4 h-4"></i> GitHub</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                        data-lucide="palette" class="w-4 h-4"></i> Dribbble</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-light"
+                data-aos="fade-up" data-aos-offset="0">
+                <a href="index.html" class="text-2xl font-bold tracking-tight">
+                    <span class="text-white">site</span><span class="text-teal-400">zet</span>
+                </a>
+                <p>&copy; 2026 Sitezet Digital Agency. Crafted with precision.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS & Main JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        const translations = {
+            en: {
+                nav_about: "About", nav_services: "Services", nav_project: "Project", nav_contact: "Contact",
+                nav_home: "Home", nav_expertise: "Expertise", nav_process: "Process", nav_works: "Works", nav_vision: "Vision", nav_cta: "Let's Talk",
+                abt_badge: "ABOUT US",
+                abt_title_1: "We Design", abt_title_2: `<span class="text-teal-600">Premium Digital</span> Ecosystems.`,
+                abt_desc: "Sitezet is a digital product studio focused on high-quality technology engineering and premium visual architecture. We redefine how brands interact in the digital world.",
+                abt_val_1_title: "Clean & Pure Code",
+                abt_val_1_desc: "We write code with world-class structure. Blazing fast load speeds, maximum performance, and easily maintainable architecture are our guarantees.",
+                abt_val_2_title: "Premium Editorial Design",
+                abt_val_2_desc: "Our designs are never rigid or generic. Every project features stunning visuals, majestic editorial typography, and lively micro-animation transitions.",
+                abt_val_3_title: "Maximum Scalability",
+                abt_val_3_desc: "The applications we build are ready to handle thousands of concurrent transactions without issues. Integrating cutting-edge cloud technology for robust performance.",
+                vis_quote: `"We don't just write code; we architect digital ecosystems. Our dedication is to pristine code quality and iconic design that elevates brands above the noise."`,
+                vis_role: "Lead Engineer & Visionary",
+                ft_title: `Ready to build something <br class="hidden sm:block"/> <span class="text-white font-bold">iconic</span> together?`, ft_btn: "Start a project", ft_dir: "Directory", ft_soc: "Social"
+            },
+            id: {
+                nav_about: "Tentang", nav_services: "Layanan", nav_project: "Proyek", nav_contact: "Kontak",
+                nav_home: "Beranda", nav_expertise: "Keahlian", nav_process: "Proses", nav_works: "Karya", nav_vision: "Visi", nav_cta: "Mari Diskusi",
+                abt_badge: "TENTANG KAMI",
+                abt_title_1: "Kami Merancang", abt_title_2: `<span class="text-teal-600">Ekosistem Digital</span> Berkelas.`,
+                abt_desc: "Sitezet adalah digital product studio yang berfokus pada rekayasa teknologi berkualitas tinggi dan arsitektur visual premium. Kami mendefinisikan ulang cara brand berinteraksi di dunia digital.",
+                abt_val_1_title: "Kode Bersih & Murni",
+                abt_val_1_desc: "Kami menulis kode dengan struktur kelas dunia. Kecepatan loading super cepat, performa maksimal, dan arsitektur yang mudah dirawat di masa depan adalah jaminan kami.",
+                abt_val_2_title: "Desain Editorial Premium",
+                abt_val_2_desc: "Desain kami tidak kaku dan generik. Setiap proyek dirancang dengan visual yang menakjubkan, tipografi editorial yang megah, serta transisi animasi mikro yang hidup.",
+                abt_val_3_title: "Skalabilitas Maksimal",
+                abt_val_3_desc: "Aplikasi yang kami bangun siap menangani ribuan transaksi secara bersamaan tanpa kendala. Mengintegrasikan teknologi cloud termutakhir untuk performa kokoh.",
+                vis_quote: `"Kami tidak hanya menulis kode; kami mengarsiteki ekosistem digital. Dedikasi kami adalah pada kualitas kode murni dan desain ikonik yang mengangkat brand Anda di atas keramaian."`,
+                vis_role: "Lead Engineer & Visionary",
+                ft_title: `Siap membangun sesuatu yang <br class="hidden sm:block"/> <span class="text-white font-bold">ikonik</span> bersama?`, ft_btn: "Mulai proyek bersama", ft_dir: "Direktori", ft_soc: "Sosial"
+            }
+        };
+    </script>
+</body>
+
+</html>
