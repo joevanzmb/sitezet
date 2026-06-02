@@ -26,11 +26,11 @@ const translations = {
         srv_7_title: "Systems Management", srv_7_desc: "Comprehensive system management solutions including monitoring, maintenance, and optimization to keep your digital infrastructure running at peak performance.",
 
         // Index - Process
-        process_badge: "Workflow", process_title: "How We Craft Perfection.",
-        proc_1_t: "Discovery", proc_1_d: "Understanding your business goals and user needs.",
-        proc_2_t: "Design", proc_2_d: "Prototyping pixel-perfect and intuitive interfaces.",
-        proc_3_t: "Development", proc_3_d: "Writing clean, scalable, and secure code architecture.",
-        proc_4_t: "Deployment", proc_4_d: "Launching to production and continuous support.",
+        process_badge: "Workflow", process_title: "How We Craft Your Website.",
+        proc_1_t: "Consultation", proc_1_d: "We discuss your goals and help you pick the right package.",
+        proc_2_t: "Content Gathering", proc_2_d: "You provide logos, texts, and images. We organize them.",
+        proc_3_t: "Design & Build", proc_3_d: "We craft your website with premium design and clean code.",
+        proc_4_t: "Review & Launch", proc_4_d: "Final review, revisions if needed, and we go live!",
 
         // Index - Works
         works_badge: "Selected Works", works_title: "Featured Project.", works_view_all: "View All Gallery",
@@ -133,11 +133,11 @@ const translations = {
         srv_7_title: "Manajemen Sistem", srv_7_desc: "Solusi manajemen sistem komprehensif termasuk pemantauan, pemeliharaan, dan optimasi untuk menjaga infrastruktur digital Anda tetap berkinerja optimal.",
 
         // Index - Process
-        process_badge: "Alur Kerja", process_title: "Cara Kami Meracik Kesempurnaan.",
-        proc_1_t: "Penemuan", proc_1_d: "Memahami tujuan bisnis dan kebutuhan pengguna Anda.",
-        proc_2_t: "Desain", proc_2_d: "Membuat prototipe antarmuka yang presisi dan intuitif.",
-        proc_3_t: "Pengembangan", proc_3_d: "Menulis arsitektur kode yang bersih, aman, dan skalabel.",
-        proc_4_t: "Peluncuran", proc_4_d: "Rilis ke produksi dan dukungan teknis berkelanjutan.",
+        process_badge: "Alur Kerja", process_title: "Cara Kami Membangun Website Anda.",
+        proc_1_t: "Konsultasi Paket", proc_1_d: "Diskusi kebutuhan bisnis & pilih paket yang paling tepat.",
+        proc_2_t: "Pengumpulan Materi", proc_2_d: "Anda menyiapkan materi seperti logo, teks, dan foto.",
+        proc_3_t: "Desain & Pembuatan", proc_3_d: "Kami mulai mendesain dan membangun website Anda.",
+        proc_4_t: "Review & Rilis", proc_4_d: "Revisi hasil jadi, lalu website Anda siap online ke publik!",
 
         // Index - Works
         works_badge: "Karya Terpilih", works_title: "Proyek Unggulan.", works_view_all: "Lihat Semua Galeri",

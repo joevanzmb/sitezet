@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontak | Sitezet</title>
+    <title>Sitezet | Crafting The Future</title>
+    <link rel="icon" type="image/jpeg" href="assets/sitezet-logo.jpg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +55,8 @@
 <body class="overflow-x-hidden">
 
     <!-- Navigation Header -->
-    <nav class="fixed w-full top-0 z-50 transition-all duration-300 pt-6 px-6 lg:px-12" id="navbar">
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300 pt-6 px-6 lg:px-12"
+        id="navbar">
         <!-- Desktop Floating Nav Card -->
         <div class="hidden lg:grid grid-cols-5 items-center justify-items-center w-full max-w-[95%] lg:max-w-5xl xl:max-w-6xl mx-auto bg-white/90 backdrop-blur-md px-8 md:px-12 xl:px-16 py-5 rounded-full border border-gray-200/50 shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
             <a href="about.html" data-i18n="nav_about"
@@ -70,7 +72,16 @@
             <a href="works.html" data-i18n="nav_project"
                 class="desktop-nav-link fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Proyek</a>
             <a href="contact.html" data-i18n="nav_contact"
-                class="desktop-nav-link fade-lang text-base font-semibold text-teal-600 transition-colors w-full text-center">Kontak</a>
+                class="fade-lang text-sm font-bold text-white bg-teal-500 hover:bg-slate-900 transition-all px-6 py-2.5 rounded-full shadow-md shadow-teal-500/20 w-max justify-self-center">Kontak</a>
+        </div>
+
+        <!-- Language Toggle (Desktop) -->
+        <div class="hidden lg:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 z-10">
+            <button onclick="toggleLang()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md hover:border-teal-200 transition-all text-xs font-bold">
+                <span class="lang-btn" data-lang="id">ID</span>
+                <span class="text-gray-300">/</span>
+                <span class="lang-btn text-gray-400" data-lang="en">EN</span>
+            </button>
         </div>
 
         <!-- Mobile Floating Nav Card -->
@@ -81,15 +92,6 @@
             
             <button id="mobile-menu-btn" class="text-slate-900">
                 <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-
-        <!-- Language Toggle (Desktop) -->
-        <div class="hidden lg:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 z-10">
-            <button onclick="toggleLang()" class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md hover:border-teal-200 transition-all text-xs font-bold">
-                <span class="lang-btn" data-lang="id">ID</span>
-                <span class="text-gray-300">/</span>
-                <span class="lang-btn text-gray-400" data-lang="en">EN</span>
             </button>
         </div>
     </nav>
@@ -136,10 +138,9 @@
                             <span class="font-semibold">Works</span>
                             <span class="nav-dot ml-auto"></span>
                         </a>
-                        <a href="contact.html" data-i18n="nav_contact" class="mobile-nav-link fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-gray-500 hover:text-teal-600 hover:bg-teal-50/50 transition-all duration-300">
-                            <i data-lucide="mail" class="w-5 h-5 text-gray-300 group-hover:text-teal-500 transition-colors duration-300"></i>
+                        <a href="contact.html" data-i18n="nav_contact" class="fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-white bg-teal-500 hover:bg-slate-900 transition-all duration-300 shadow-md">
+                            <i data-lucide="mail" class="w-5 h-5 text-white transition-colors duration-300"></i>
                             <span class="font-semibold">Contact</span>
-                            <span class="nav-dot ml-auto"></span>
                         </a>
                     </div>
                 </div>

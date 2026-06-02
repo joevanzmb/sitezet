@@ -300,17 +300,6 @@ body.menu-open {
     color: #0d9488 !important;
     position: relative;
 }
-.desktop-nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #0d9488;
-}
 
 /* Mobile mockup responsive fixes */
 @media (max-width: 640px) {
@@ -335,3 +324,142 @@ body.menu-open {
         right: 1% !important;
     }
 }
+
+/* Horizontal Expanding Cards (Flex Accordion) */
+/* Horizontal Expanding Cards (Flex Accordion) */
+.flex-card {
+    transition: all 0.8s cubic-bezier(0.25, 1.05, 0.5, 1);
+    display: flex;
+    overflow: hidden;
+    transform: translateZ(0); /* Hardware acceleration for smoother animations */
+}
+
+@media (min-width: 768px) {
+    /* Desktop / Tablet Horizontal Accordion */
+    .flex-card {
+        flex: 1;
+        align-items: stretch;
+        height: 280px; /* Fixed height so it doesn't change when widening */
+        flex-direction: row;
+    }
+    .flex-card.active {
+        flex: 2.5; /* Expand width significantly to fit side-by-side */
+    }
+    .card-left {
+        width: 100%;
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.8s cubic-bezier(0.25, 1.05, 0.5, 1);
+    }
+    .flex-card.active .card-left {
+        width: 40%;
+        flex: 0 0 40%;
+    }
+    .flex-card.active .flex-card-title {
+        margin-top: 0;
+    }
+    .flex-card-content {
+        opacity: 0;
+        width: 0;
+        padding-left: 0;
+        white-space: normal;
+        transition: all 0.8s cubic-bezier(0.25, 1.05, 0.5, 1);
+        border-left: 1px solid transparent;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        transform: translateX(30px) scale(0.95);
+        transform-origin: left center;
+    }
+    .flex-card.active .flex-card-content {
+        opacity: 1;
+        width: 60%;
+        padding-left: 2rem;
+        margin-left: 2rem;
+        border-left-color: #f1f5f9; /* Tailwind slate-100 */
+        transform: translateX(0) scale(1);
+    }
+}
+
+@media (max-width: 767px) {
+    /* Mobile Vertical Accordion */
+    .flex-card {
+        flex-direction: column;
+        height: auto;
+    }
+    .card-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.8s cubic-bezier(0.25, 1.05, 0.5, 1);
+    }
+    .flex-card-content {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.8s cubic-bezier(0.25, 1.05, 0.5, 1);
+        border-top: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateY(20px) scale(0.95);
+        transform-origin: top center;
+    }
+    .flex-card.active .flex-card-content {
+        opacity: 1;
+        max-height: 500px; /* Large enough to fit content */
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+        border-top-color: #f1f5f9;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Title orientation logic */
+.flex-card-title {
+    transition: all 0.8s cubic-bezier(0.25, 1.05, 0.5, 1);
+    transform-origin: left center;
+}
+
+/* Workflow Animations */
+@keyframes flow-line {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+.animate-flow-line {
+    background-size: 200% auto;
+    animation: flow-line 3s linear infinite;
+}
+
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(1.05); }
+}
+.animate-float-slow {
+    animation: float-slow 8s ease-in-out infinite;
+}
+
+/* Marquee Animations */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+.animate-marquee {
+    animation: marquee 40s linear infinite;
+}
+
+.animate-marquee-reverse {
+    animation: marquee-reverse 40s linear infinite;
+}
+

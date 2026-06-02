@@ -12,14 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
         AOS.init({ once: true, offset: 100 });
     }
 
-    // 3. Scroll Progress Bar
-    var progressBar = document.getElementById('scroll-progress');
-    if (progressBar) {
-        window.addEventListener('scroll', function () {
-            var scrollTop = window.scrollY;
-            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            progressBar.style.width = (scrollTop / docHeight * 100) + '%';
-        });
+    // 3. Smart Navbar (Hide on scroll down, show on scroll up)
+    var navbar = document.getElementById('navbar');
+    var lastScrollTop = 0;
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 80) {
+                // Scroll Down: Hide navbar
+                navbar.style.transform = 'translateY(-100%)';
+            } else {
+                // Scroll Up: Show navbar
+                navbar.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        }, { passive: true });
     }
 
     // 4. Mobile Menu Toggle with Staggered Animation
@@ -188,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function () {
         setLang('id', true);
     }
 
-    // 7. Accordion Toggle
+    // 7. Accordion Toggle (Vertical)
     window.toggleAccordion = function (element, contentClass) {
         var content = element.querySelector('.' + contentClass);
         if (!content) return;
@@ -212,4 +219,31 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 
+    // 8. Horizontal Flex Accordion Toggle
+    window.toggleHorizontalAccordion = function (element) {
+        // If already active, do nothing or collapse (usually in flex accordion, one must always be active or we can toggle it)
+        // Let's make it so clicking an active one doesn't collapse it, because one needs to be expanded
+        if (element.classList.contains('active')) return;
+
+        // Find parent row
+        var parentRow = element.parentElement;
+        if (!parentRow) return;
+
+        // Find all cards in this row
+        var cards = parentRow.querySelectorAll('.flex-card');
+        
+        // Remove active from all
+        cards.forEach(function(card) {
+            card.classList.remove('active');
+            var iconWrapper = card.querySelector('.icon-wrapper');
+            if (iconWrapper) iconWrapper.style.transform = 'rotate(0deg)';
+        });
+
+        // Add active to clicked
+        element.classList.add('active');
+        var clickedIconWrapper = element.querySelector('.icon-wrapper');
+        if (clickedIconWrapper) clickedIconWrapper.style.transform = 'rotate(45deg)';
+    };
+
 });
+
