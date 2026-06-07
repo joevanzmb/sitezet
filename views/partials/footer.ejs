@@ -1,0 +1,133 @@
+<!-- Minimalist Dark Footer -->
+    <div class="bg-white pb-2 px-2 lg:pb-4 lg:px-4 flex flex-col items-center overflow-hidden">
+        <!-- Giant Logo touching footer -->
+        <div class="w-full flex justify-center -mb-[7vw] lg:-mb-[5vw] translate-y-[2vw] z-0 pointer-events-none"
+            data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-[20vw] lg:text-[22vw] font-black tracking-normal leading-none select-none">
+                <span class="text-slate-900">site</span><span class="text-teal-500">zet</span>
+            </h2>
+        </div>
+        <footer id="contact"
+            class="w-full bg-slate-900 text-white pt-24 pb-10 relative z-10 overflow-hidden rounded-3xl lg:rounded-[3rem]">
+            <!-- Subtle BG -->
+            <div class="absolute inset-0 z-0 opacity-5">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1600&auto=format&fit=crop"
+                    alt="" class="w-full h-full object-cover" />
+            </div>
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+                <div class="flex flex-col lg:flex-row justify-between items-start gap-16 mb-20">
+
+                    <div class="lg:w-1/2" data-aos="fade-right">
+                        <a href="#" class="text-4xl font-bold tracking-tight inline-block mb-6">
+                            <span class="text-white">site</span><span class="text-teal-500">zet</span>
+                        </a>
+                        <h4 data-i18n="ft_title"
+                            class="fade-lang text-3xl md:text-5xl font-light leading-tight mb-10 text-gray-300">
+                            Ready to build something <br class="hidden sm:block" /> <span
+                                class="text-white font-bold">iconic</span> together?
+                        </h4>
+                        <a href="#contact"
+                            class="inline-flex items-center gap-4 px-8 py-4 rounded-full bg-white/5 border border-white/10 hover:bg-teal-500 hover:border-teal-500 transition-all group font-medium">
+                            <span data-i18n="ft_btn" class="fade-lang">Start a project</span>
+                            <div
+                                class="w-8 h-8 rounded-full bg-white flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i data-lucide="arrow-up-right"
+                                    class="w-4 h-4 text-slate-900 group-hover:animate-wiggle"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="flex gap-16 lg:gap-24" data-aos="fade-left" data-aos-delay="200">
+                        <div>
+                            <h5 data-i18n="ft_dir"
+                                class="fade-lang text-teal-400 font-bold mb-6 uppercase tracking-wider text-xs">
+                                Directory
+                            </h5>
+                            <ul class="space-y-4 font-light text-gray-400">
+                                <li><a href="index.html" data-i18n="nav_home"
+                                        class="fade-lang hover:text-white transition-colors">Home</a></li>
+                                <li><a href="services.html" data-i18n="nav_services"
+                                        class="fade-lang hover:text-white transition-colors">Layanan</a></li>
+                                <li><a href="about.html" data-i18n="nav_about"
+                                        class="fade-lang hover:text-white transition-colors">Tentang</a></li>
+                                <li><a href="works.html" data-i18n="nav_project"
+                                        class="fade-lang hover:text-white transition-colors">Proyek</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5 data-i18n="ft_soc"
+                                class="fade-lang text-teal-400 font-bold mb-6 uppercase tracking-wider text-xs">Social
+                            </h5>
+                            <ul class="space-y-4 font-light text-gray-400">
+                                <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                            class="fab fa-linkedin-in w-4 text-center"></i> LinkedIn</a></li>
+                                <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                            class="fab fa-instagram w-4 text-center"></i> Instagram</a></li>
+                                <li><a href="#" class="hover:text-white transition-colors flex items-center gap-2"><i
+                                            class="fab fa-github w-4 text-center"></i> GitHub</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 font-light">
+                    <p>&copy; 2026 Sitezet Digital Agency. Crafted with precision.</p>
+                    <div class="flex gap-6">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- AOS & Main JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Accordion Interaction Logic
+        function toggleAccordion(element, contentClass) {
+            const content = element.querySelector('.' + contentClass);
+            const iconWrapper = element.querySelector('.icon-wrapper');
+            const isOpen = content.classList.contains('max-h-[500px]');
+
+            // Optional: Close others in the same group (Uncomment to enable auto-collapse)
+            /*
+            const siblings = element.parentElement.children;
+            for(let sibling of siblings) {
+                if(sibling !== element && sibling.classList.contains(element.classList[0])) {
+                    let sibContent = sibling.querySelector('.' + contentClass);
+                    let sibIcon = sibling.querySelector('.icon-wrapper');
+                    if(sibContent) {
+                        sibContent.classList.remove('max-h-[500px]', 'opacity-100');
+                        sibContent.classList.add('max-h-0', 'opacity-0');
+                    }
+                    if(sibIcon) sibIcon.style.transform = 'rotate(0deg)';
+                }
+            }
+            */
+
+            if (!isOpen) {
+                // Open action
+                content.classList.remove('max-h-0', 'opacity-0');
+                content.classList.add('max-h-[500px]', 'opacity-100');
+                // Rotate icon depending on the section type
+                if (contentClass === 'faq-content') {
+                    iconWrapper.style.transform = 'rotate(180deg)'; // Arrow flips up
+                } else {
+                    iconWrapper.style.transform = 'rotate(45deg)'; // Plus becomes X
+                }
+            } else {
+                // Close action
+                content.classList.remove('max-h-[500px]', 'opacity-100');
+                content.classList.add('max-h-0', 'opacity-0');
+                iconWrapper.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+
+</html>

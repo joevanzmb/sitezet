@@ -1,0 +1,651 @@
+<%- include('partials/header') %>
+
+<!-- Decorative floating circles -->
+            <div class="drawer-circle drawer-circle-1"></div>
+            <div class="drawer-circle drawer-circle-2"></div>
+
+            <div class="relative z-10 flex flex-col min-h-full">
+                <!-- Header -->
+                <div class="pt-10 pb-5 px-8 border-b border-gray-100">
+                    <div class="flex items-center gap-2 mb-1">
+                        <a href="index.html" class="text-2xl font-extrabold tracking-tight">
+                            <span class="text-slate-900">site</span><span class="text-teal-600">zet</span>
+                        </a>
+                        <span class="px-2 py-0.5 bg-teal-50 text-teal-600 text-[10px] font-bold rounded-full border border-teal-200/50">DIGITAL</span>
+                    </div>
+                    <p class="text-xs text-gray-400 font-light pl-0.5">Crafting The Future of Web</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="flex-1 py-6 px-6">
+                    <div class="flex flex-col space-y-0.5">
+                        <a href="index.html" data-i18n="nav_home" class="mobile-nav-link fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-gray-500 hover:text-teal-600 hover:bg-teal-50/50 transition-all duration-300">
+                            <i data-lucide="home" class="w-5 h-5 text-gray-300 group-hover:text-teal-500 transition-colors duration-300"></i>
+                            <span class="font-semibold">Home</span>
+                            <span class="nav-dot ml-auto"></span>
+                        </a>
+                        <a href="about.html" data-i18n="nav_about" class="mobile-nav-link fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-gray-500 hover:text-teal-600 hover:bg-teal-50/50 transition-all duration-300">
+                            <i data-lucide="info" class="w-5 h-5 text-gray-300 group-hover:text-teal-500 transition-colors duration-300"></i>
+                            <span class="font-semibold">About</span>
+                            <span class="nav-dot ml-auto"></span>
+                        </a>
+                        <a href="services.html" data-i18n="nav_services" class="mobile-nav-link fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-gray-500 hover:text-teal-600 hover:bg-teal-50/50 transition-all duration-300">
+                            <i data-lucide="layers" class="w-5 h-5 text-gray-300 group-hover:text-teal-500 transition-colors duration-300"></i>
+                            <span class="font-semibold">Services</span>
+                            <span class="nav-dot ml-auto"></span>
+                        </a>
+                        <a href="works.html" data-i18n="nav_works" class="mobile-nav-link fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-gray-500 hover:text-teal-600 hover:bg-teal-50/50 transition-all duration-300">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-gray-300 group-hover:text-teal-500 transition-colors duration-300"></i>
+                            <span class="font-semibold">Works</span>
+                            <span class="nav-dot ml-auto"></span>
+                        </a>
+                        <a href="contact.html" data-i18n="nav_contact" class="fade-lang group relative flex items-center gap-4 px-4 py-3.5 rounded-xl text-white bg-teal-500 hover:bg-slate-900 transition-all duration-300 shadow-md">
+                            <i data-lucide="mail" class="w-5 h-5 text-white transition-colors duration-300"></i>
+                            <span class="font-semibold">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bottom: Lang toggle + Social -->
+                <div class="px-6 py-6 border-t border-gray-100 bg-gray-50/70">
+                    <div class="flex items-center justify-between">
+                        <button onclick="toggleLang()" class="flex items-center gap-2 px-4 py-2 rounded-full border border-gray-200 hover:border-teal-200 transition-all text-sm font-bold bg-white shadow-sm">
+                            <span class="lang-btn" data-lang="id">ID</span>
+                            <span class="text-gray-300">|</span>
+                            <span class="lang-btn text-gray-400" data-lang="en">EN</span>
+                        </button>
+                        <div class="flex items-center gap-2">
+                            <a href="#" class="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-teal-600 hover:border-teal-200 transition-all shadow-sm hover:shadow-md"><i class="fab fa-linkedin-in text-xs"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-teal-600 hover:border-teal-200 transition-all shadow-sm hover:shadow-md"><i class="fab fa-instagram text-xs"></i></a>
+                            <a href="#" class="w-9 h-9 rounded-full bg-white border border-gray-200 flex items-center justify-center text-gray-400 hover:text-teal-600 hover:border-teal-200 transition-all shadow-sm hover:shadow-md"><i class="fab fa-github text-xs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh] flex items-center pt-36 pb-20 overflow-hidden bg-slate-50">
+        <div class="absolute top-0 right-0 -mr-40 -mt-40 w-[600px] h-[600px] bg-teal-50 rounded-full blur-[100px] opacity-70 pointer-events-none"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span data-i18n="srv_badge" class="fade-lang inline-block px-4 py-1.5 rounded-full bg-teal-50 border border-teal-100 text-teal-600 font-semibold text-sm mb-6" data-aos="fade-up">LAYANAN KAMI</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+                <span data-i18n="srv_hero_title_1" class="fade-lang">Solusi Digital</span> <br class="hidden md:block"/>
+                <span data-i18n="srv_hero_title_2" class="fade-lang">Tanpa Batas <span class="text-teal-600">Skalabilitas</span>.</span>
+            </h1>
+            <p data-i18n="srv_hero_desc" class="fade-lang text-lg md:text-xl text-gray-500 font-light leading-relaxed max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Dari purwarupa UI/UX editorial berkelas tinggi hingga rekayasa backend tangguh yang siap menangani jutaan request. Kami membawa visi Anda menjadi kenyataan.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Detailed Cards Grid -->
+    <section class="py-24 bg-white border-t border-slate-100 relative z-10">
+        <div class="max-w-6xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all duration-300" data-aos="fade-up">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-8">
+                        <i data-lucide="monitor" class="w-7 h-7 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="srv_card_1_title" class="fade-lang font-extrabold text-2xl text-slate-900 mb-4">Pengembangan Web Khusus</h3>
+                    <p data-i18n="srv_card_1_desc" class="fade-lang text-gray-500 font-light leading-relaxed mb-6">
+                        Membangun aplikasi web kustom yang sangat teroptimasi menggunakan teknologi Laravel, Tailwind, React, dan Vue. Mengutamakan performa loading cepat dan keamanan terjamin.
+                    </p>
+                    <ul class="space-y-3 font-semibold text-slate-800 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Single Page Application (SPA)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Dashboard Multi-Tenant & SaaS</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Integrasi API Pihak Ketiga</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-8">
+                        <i data-lucide="layers" class="w-7 h-7 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="srv_card_2_title" class="fade-lang font-extrabold text-2xl text-slate-900 mb-4">Desain UI/UX & Prototipe Interaktif</h3>
+                    <p data-i18n="srv_card_2_desc" class="fade-lang text-gray-500 font-light leading-relaxed mb-6">
+                        Menciptakan perjalanan pengguna yang mulus dan antarmuka premium yang memikat mata pertama kali. Menghadirkan identitas visual yang eksklusif dan berciri khas kuat.
+                    </p>
+                    <ul class="space-y-3 font-semibold text-slate-800 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Desain Sistem Eksklusif (Figma)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Riset Pengguna & Wireframing</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Animasi Mikro & Interaksi Premium</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all duration-300" data-aos="fade-up">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-8">
+                        <i data-lucide="zap" class="w-7 h-7 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="srv_card_3_title" class="fade-lang font-extrabold text-2xl text-slate-900 mb-4">Integrasi Sistem & Cloud DevOps</h3>
+                    <p data-i18n="srv_card_3_desc" class="fade-lang text-gray-500 font-light leading-relaxed mb-6">
+                        Mengintegrasikan berbagai backend system, pembayaran gateway, ERP, dan mendesain infrastruktur server tangguh (AWS, Google Cloud, cPanel Premium) untuk skalabilitas.
+                    </p>
+                    <ul class="space-y-3 font-semibold text-slate-800 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Arsitektur Microservices</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> CI/CD Pipeline Otomatis</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Optimasi Server & Basis Data</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-10 rounded-3xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 flex items-center justify-center mb-8">
+                        <i data-lucide="search" class="w-7 h-7 text-teal-600"></i>
+                    </div>
+                    <h3 data-i18n="srv_card_4_title" class="fade-lang font-extrabold text-2xl text-slate-900 mb-4">Optimasi Performa & SEO Kelas Atas</h3>
+                    <p data-i18n="srv_card_4_desc" class="fade-lang text-gray-500 font-light leading-relaxed mb-6">
+                        Memastikan situs web Anda dimuat dalam hitungan milidetik dan menduduki peringkat teratas Google Search. Memaksimalkan Core Web Vitals 100% hijau.
+                    </p>
+                    <ul class="space-y-3 font-semibold text-slate-800 text-sm">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Audit Core Web Vitals</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> SEO On-Page & Skema Terstruktur</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-teal-600"></i> Optimasi Kode & Aset Media</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Estimator Section -->
+    <section id="estimator" class="py-32 bg-slate-50 relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-teal-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-bold text-sm mb-6">
+                    <i data-lucide="calculator" class="w-4 h-4"></i>
+                    Interactive Estimator
+                </div>
+                <h3 class="text-4xl md:text-5xl font-black text-slate-900 tracking-tight mb-4">Estimasi Biaya Transparan</h3>
+                <p class="text-slate-500 text-lg max-w-2xl mx-auto">Sesuaikan kebutuhan digital Anda dan dapatkan perkiraan biaya seketika. Kami menawarkan paket terjangkau mulai dari <span class="font-bold text-teal-600">Rp 350.000</span>.</p>
+            </div>
+
+            <div class="flex flex-col xl:flex-row gap-12">
+                <!-- Left: Form -->
+                <div class="xl:w-2/3 space-y-16" data-aos="fade-right">
+                    
+                    <!-- Step 1: Tipe Proyek -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 border-b border-slate-200 pb-3">
+                            <span class="w-10 h-10 rounded-xl bg-teal-500 text-white flex items-center justify-center font-black text-lg shadow-lg shadow-teal-500/30">1</span>
+                            <div>
+                                <h4 class="text-2xl font-bold text-slate-800">Pilih Tipe Website</h4>
+                                <p class="text-sm text-slate-500">Pilih fondasi yang paling sesuai dengan tujuan Anda.</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="project-type-grid">
+                            <!-- Card 1 -->
+                            <label class="relative cursor-pointer group">
+                                <input type="radio" name="project_type" value="350000" data-label="Landing Page Basic" class="peer sr-only" checked>
+                                <div class="h-full p-6 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 peer-checked:shadow-xl peer-checked:shadow-teal-900/5 relative overflow-hidden">
+                                    <div class="flex justify-between items-start mb-6">
+                                        <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors">
+                                            <i data-lucide="layout" class="w-6 h-6"></i>
+                                        </div>
+                                        <div class="w-6 h-6 rounded-full border-2 border-slate-200 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="font-bold text-slate-800 text-lg mb-2">Landing Page Promo</h5>
+                                    <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Single Page Design</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Tombol WhatsApp</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Mobile Responsive</li>
+                                    </ul>
+                                </div>
+                            </label>
+                            
+                            <!-- Card 2 -->
+                            <label class="relative cursor-pointer group">
+                                <input type="radio" name="project_type" value="750000" data-label="Company Profile" class="peer sr-only">
+                                <div class="h-full p-6 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 peer-checked:shadow-xl peer-checked:shadow-teal-900/5 relative overflow-hidden">
+                                    <div class="absolute top-0 right-0 bg-gradient-to-r from-orange-400 to-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-bl-lg">POPULER</div>
+                                    <div class="flex justify-between items-start mb-6">
+                                        <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors mt-2">
+                                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                                        </div>
+                                        <div class="w-6 h-6 rounded-full border-2 border-slate-200 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all mt-2">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="font-bold text-slate-800 text-lg mb-2">Company Profile</h5>
+                                    <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Max 5 Halaman</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Galeri & Portofolio</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Form Kontak Email</li>
+                                    </ul>
+                                </div>
+                            </label>
+
+                            <!-- Card 3 -->
+                            <label class="relative cursor-pointer group">
+                                <input type="radio" name="project_type" value="1500000" data-label="Katalog / Toko Basic" class="peer sr-only">
+                                <div class="h-full p-6 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 peer-checked:shadow-xl peer-checked:shadow-teal-900/5 relative overflow-hidden">
+                                    <div class="flex justify-between items-start mb-6">
+                                        <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors">
+                                            <i data-lucide="shopping-bag" class="w-6 h-6"></i>
+                                        </div>
+                                        <div class="w-6 h-6 rounded-full border-2 border-slate-200 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="font-bold text-slate-800 text-lg mb-2">Toko Online</h5>
+                                    <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Keranjang Belanja</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Cek Ongkir Otomatis</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Checkout via WA</li>
+                                    </ul>
+                                </div>
+                            </label>
+
+                            <!-- Card 4 -->
+                            <label class="relative cursor-pointer group">
+                                <input type="radio" name="project_type" value="2500000" data-label="E-Commerce Pro" class="peer sr-only">
+                                <div class="h-full p-6 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 peer-checked:shadow-xl peer-checked:shadow-teal-900/5 relative overflow-hidden">
+                                    <div class="absolute top-0 right-0 bg-slate-800 text-white text-[10px] font-bold px-4 py-1 rounded-bl-lg">ADVANCED</div>
+                                    <div class="flex justify-between items-start mb-6">
+                                        <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors mt-2">
+                                            <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                                        </div>
+                                        <div class="w-6 h-6 rounded-full border-2 border-slate-200 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all mt-2">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <h5 class="font-bold text-slate-800 text-lg mb-2">E-Commerce Pro</h5>
+                                    <ul class="text-xs text-slate-500 space-y-1.5 mb-4">
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Payment Gateway Otomatis</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Sistem Kupon & Diskon</li>
+                                        <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Akun Member (User Login)</li>
+                                    </ul>
+                                </div>
+                            </label>
+
+                            <!-- Card 5 -->
+                            <label class="relative cursor-pointer group lg:col-span-2">
+                                <input type="radio" name="project_type" value="4000000" data-label="Custom Web / SaaS" class="peer sr-only">
+                                <div class="h-full p-6 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 peer-checked:shadow-xl peer-checked:shadow-teal-900/5 relative overflow-hidden flex flex-col md:flex-row gap-6">
+                                    <div class="shrink-0">
+                                        <div class="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors mb-4">
+                                            <i data-lucide="code-2" class="w-6 h-6"></i>
+                                        </div>
+                                        <div class="w-6 h-6 rounded-full border-2 border-slate-200 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-bold text-slate-800 text-lg mb-2">Custom Web App & Sistem Kustom</h5>
+                                        <p class="text-xs text-slate-500 mb-3">Solusi yang dibangun khusus dari awal untuk kebutuhan bisnis unik Anda.</p>
+                                        <ul class="text-xs text-slate-500 grid grid-cols-1 md:grid-cols-2 gap-2">
+                                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Sistem Khusus (Custom Flow)</li>
+                                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Portal Internal / ERP Dasar</li>
+                                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Integrasi API Pihak ke-3</li>
+                                            <li class="flex items-center gap-1.5"><i data-lucide="check" class="w-3 h-3 text-teal-500"></i> Arsitektur Scalable</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Fitur Tambahan -->
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                            <div class="flex items-center gap-4">
+                                <span class="w-10 h-10 rounded-xl bg-teal-500 text-white flex items-center justify-center font-black text-lg shadow-lg shadow-teal-500/30">2</span>
+                                <div>
+                                    <h4 class="text-2xl font-bold text-slate-800">Ekstra & Peningkatan</h4>
+                                    <p class="text-sm text-slate-500">Tambahkan fitur ini sesuai kebutuhan (Bisa pilih lebih dari satu).</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="features-grid">
+                            
+                            <label class="relative cursor-pointer group">
+                                <input type="checkbox" name="feature" value="250000" data-label="Domain & Hosting Premium" class="peer sr-only" checked>
+                                <div class="px-5 py-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 flex flex-col gap-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors">
+                                            <i data-lucide="server" class="w-5 h-5"></i>
+                                        </div>
+                                        <div class="w-5 h-5 rounded border-2 border-slate-300 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="block font-bold text-slate-800">Domain & Hosting</span>
+                                        <span class="block text-xs text-slate-500">Premium Server (1 Tahun)</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="relative cursor-pointer group">
+                                <input type="checkbox" name="feature" value="300000" data-label="Panel Admin (CMS)" class="peer sr-only">
+                                <div class="px-5 py-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 flex flex-col gap-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors">
+                                            <i data-lucide="database" class="w-5 h-5"></i>
+                                        </div>
+                                        <div class="w-5 h-5 rounded border-2 border-slate-300 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="block font-bold text-slate-800">Panel CMS Khusus</span>
+                                        <span class="block text-xs text-slate-500">Bebas ubah konten sendiri</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="relative cursor-pointer group">
+                                <input type="checkbox" name="feature" value="150000" data-label="Multi-Bahasa" class="peer sr-only">
+                                <div class="px-5 py-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 flex flex-col gap-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors">
+                                            <i data-lucide="languages" class="w-5 h-5"></i>
+                                        </div>
+                                        <div class="w-5 h-5 rounded border-2 border-slate-300 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="block font-bold text-slate-800">Multi-Bahasa (i18n)</span>
+                                        <span class="block text-xs text-slate-500">Indonesia & Inggris</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <label class="relative cursor-pointer group">
+                                <input type="checkbox" name="feature" value="200000" data-label="SEO Readiness" class="peer sr-only">
+                                <div class="px-5 py-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 flex flex-col gap-3">
+                                    <div class="flex items-center justify-between">
+                                        <div class="w-10 h-10 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-[.peer:checked+&]:bg-teal-100 group-[.peer:checked+&]:text-teal-600 transition-colors">
+                                            <i data-lucide="trending-up" class="w-5 h-5"></i>
+                                        </div>
+                                        <div class="w-5 h-5 rounded border-2 border-slate-300 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all">
+                                            <i data-lucide="check" class="w-3 h-3 text-white opacity-0 group-[.peer:checked+&]:opacity-100 transform scale-50 group-[.peer:checked+&]:scale-100 transition-all"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <span class="block font-bold text-slate-800">Optimasi SEO Dasar</span>
+                                        <span class="block text-xs text-slate-500">Meningkatkan ranking Google</span>
+                                    </div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Kecepatan -->
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 border-b border-slate-200 pb-3">
+                            <span class="w-10 h-10 rounded-xl bg-teal-500 text-white flex items-center justify-center font-black text-lg shadow-lg shadow-teal-500/30">3</span>
+                            <div>
+                                <h4 class="text-2xl font-bold text-slate-800">Timeline Pengerjaan</h4>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-5" id="timeline-grid">
+                            <label class="relative cursor-pointer group flex-1">
+                                <input type="radio" name="timeline" value="1" data-label="Standard (Normal)" class="peer sr-only" checked>
+                                <div class="px-6 py-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 flex items-center gap-4">
+                                    <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all shrink-0">
+                                        <div class="w-2 h-2 rounded-full bg-white opacity-0 group-[.peer:checked+&]:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-slate-800 text-lg group-[.peer:checked+&]:text-teal-700">Standard (Reguler)</div>
+                                        <div class="text-sm text-slate-500">Estimasi 2 - 3 Minggu</div>
+                                    </div>
+                                </div>
+                            </label>
+                            
+                            <label class="relative cursor-pointer group flex-1">
+                                <input type="radio" name="timeline" value="1.3" data-label="Express (Dipercepat)" class="peer sr-only">
+                                <div class="px-6 py-5 rounded-2xl border-2 border-slate-200 bg-white hover:border-teal-300 transition-all duration-300 peer-checked:border-teal-500 peer-checked:bg-teal-50/50 flex items-center gap-4 overflow-hidden relative">
+                                    <div class="absolute -right-6 top-4 bg-orange-500 text-white text-[10px] font-bold px-8 py-1 rotate-45 transform">PRIORITAS</div>
+                                    <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center group-[.peer:checked+&]:border-teal-500 group-[.peer:checked+&]:bg-teal-500 transition-all shrink-0">
+                                        <div class="w-2 h-2 rounded-full bg-white opacity-0 group-[.peer:checked+&]:opacity-100 transition-opacity"></div>
+                                    </div>
+                                    <div>
+                                        <div class="font-bold text-slate-800 text-lg group-[.peer:checked+&]:text-teal-700">Express (+30%)</div>
+                                        <div class="text-sm text-slate-500">Estimasi &lt; 7 Hari</div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right: Sticky Total Display -->
+                <div class="xl:w-1/3" data-aos="fade-left" data-aos-delay="200">
+                    <div class="sticky top-24 rounded-3xl p-8 bg-gradient-to-br from-slate-900 to-slate-800 shadow-2xl text-white overflow-hidden border border-slate-700">
+                        <!-- Decorative shapes -->
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-teal-500/20 rounded-full blur-3xl pointer-events-none transform translate-x-1/3 -translate-y-1/3"></div>
+                        <div class="absolute bottom-0 left-0 w-40 h-40 bg-blue-500/20 rounded-full blur-2xl pointer-events-none transform -translate-x-1/2 translate-y-1/2"></div>
+                        
+                        <div class="relative z-10">
+                            <h4 class="text-teal-400 font-bold mb-8 uppercase tracking-widest text-sm flex items-center gap-2">
+                                <i data-lucide="receipt" class="w-4 h-4"></i> Ringkasan Biaya
+                            </h4>
+                            
+                            <div class="mb-10">
+                                <div class="text-sm text-slate-400 font-medium mb-2">Estimasi Total Investasi</div>
+                                <div class="flex items-start mb-2">
+                                    <span class="text-2xl font-bold text-teal-500 mt-1 mr-2">Rp</span>
+                                    <span id="estimator-total" class="text-5xl font-black tracking-tighter text-white transition-all duration-300">350.000</span>
+                                </div>
+                                <p class="text-slate-500 text-xs leading-relaxed">*Harga ini adalah estimasi awal dan bisa dinegosiasikan menyesuaikan detail *requirement* aktual.</p>
+                            </div>
+
+                            <div class="bg-slate-800/50 rounded-2xl p-5 mb-8 border border-slate-700/50 backdrop-blur-sm">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Detail Pilihan Anda:</h5>
+                                <ul class="text-sm space-y-3" id="estimator-summary">
+                                    <li class="flex items-start gap-3">
+                                        <div class="bg-teal-500/20 p-1 rounded mt-0.5"><i data-lucide="layout" class="w-3 h-3 text-teal-400"></i></div> 
+                                        <span id="summary-type" class="text-slate-200 font-medium leading-tight">Landing Page Basic</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="bg-teal-500/20 p-1 rounded mt-0.5"><i data-lucide="clock" class="w-3 h-3 text-teal-400"></i></div> 
+                                        <span id="summary-timeline" class="text-slate-200 font-medium leading-tight">Standard (Normal)</span>
+                                    </li>
+                                    <!-- Fitur tambahan via JS -->
+                                </ul>
+                            </div>
+
+                            <button id="estimator-cta" class="w-full bg-teal-500 hover:bg-teal-400 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-teal-500/20 flex items-center justify-center gap-2 group hover:scale-[1.02]">
+                                Konsultasikan Sekarang
+                                <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimator Logic Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const radiosType = document.querySelectorAll('input[name="project_type"]');
+            const checkboxesFeature = document.querySelectorAll('input[name="feature"]');
+            const radiosTimeline = document.querySelectorAll('input[name="timeline"]');
+            
+            const totalDisplay = document.getElementById('estimator-total');
+            const summaryType = document.getElementById('summary-type');
+            const summaryTimeline = document.getElementById('summary-timeline');
+            const summaryContainer = document.getElementById('estimator-summary');
+            const btnCta = document.getElementById('estimator-cta');
+
+            // Format number to Rupiah
+            const formatRp = (number) => {
+                return new Intl.NumberFormat('id-ID').format(number);
+            };
+
+            const calculateTotal = () => {
+                let basePrice = 0;
+                let featuresPrice = 0;
+                let timelineMultiplier = 1;
+
+                let selectedTypeLabel = '';
+                let selectedTimelineLabel = '';
+                let selectedFeatures = [];
+
+                // Get Project Type
+                radiosType.forEach(radio => {
+                    if (radio.checked) {
+                        basePrice = parseInt(radio.value);
+                        selectedTypeLabel = radio.getAttribute('data-label');
+                    }
+                });
+
+                // Get Features
+                checkboxesFeature.forEach(chk => {
+                    if (chk.checked) {
+                        featuresPrice += parseInt(chk.value);
+                        selectedFeatures.push(chk.getAttribute('data-label'));
+                    }
+                });
+
+                // Get Timeline Multiplier
+                radiosTimeline.forEach(radio => {
+                    if (radio.checked) {
+                        timelineMultiplier = parseFloat(radio.value);
+                        selectedTimelineLabel = radio.getAttribute('data-label');
+                    }
+                });
+
+                // Calculate
+                const subtotal = basePrice + featuresPrice;
+                const total = Math.round(subtotal * timelineMultiplier);
+
+                // Add animation effect to number
+                totalDisplay.style.transform = 'scale(1.1) translateY(-2px)';
+                totalDisplay.style.opacity = '0.5';
+                totalDisplay.style.color = '#5eead4'; // teal-300
+                
+                setTimeout(() => {
+                    totalDisplay.innerText = formatRp(total);
+                    totalDisplay.style.transform = 'scale(1) translateY(0)';
+                    totalDisplay.style.opacity = '1';
+                    totalDisplay.style.color = '#ffffff';
+                }, 200);
+
+                // Update Summary UI
+                summaryType.innerText = selectedTypeLabel;
+                summaryTimeline.innerText = selectedTimelineLabel;
+                
+                // Clear existing dynamic feature lis
+                const existingLis = summaryContainer.querySelectorAll('.feature-li');
+                existingLis.forEach(li => li.remove());
+
+                // Add selected features to summary
+                selectedFeatures.forEach(feat => {
+                    const li = document.createElement('li');
+                    li.className = 'feature-li flex items-start gap-3';
+                    li.innerHTML = `
+                        <div class="bg-teal-500/20 p-1 rounded mt-0.5"><i data-lucide="plus" class="w-3 h-3 text-teal-400"></i></div> 
+                        <span class="text-slate-300 leading-tight">${feat}</span>
+                    `;
+                    summaryContainer.appendChild(li);
+                });
+
+                // Re-init lucide icons for new elements
+                if(window.lucide) {
+                    lucide.createIcons();
+                }
+
+                // Update CTA Link
+                const waNumber = '6281234567890'; // Ganti dengan nomor asli
+                let waMessage = `Halo Sitezet, saya tertarik membuat *${selectedTypeLabel}*.\n\n`;
+                if(selectedFeatures.length > 0){
+                    waMessage += `Fitur Tambahan:\n- ${selectedFeatures.join('\n- ')}\n\n`;
+                }
+                waMessage += `Timeline Pengerjaan: *${selectedTimelineLabel}*\n`;
+                waMessage += `Estimasi Biaya: *Rp ${formatRp(total)}*\n\n`;
+                waMessage += `Mohon info lebih lanjut untuk memulai diskusi proyek ini. Terima kasih!`;
+                
+                btnCta.onclick = () => {
+                    window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(waMessage)}`, '_blank');
+                };
+            };
+
+            // Add Event Listeners
+            radiosType.forEach(el => el.addEventListener('change', calculateTotal));
+            checkboxesFeature.forEach(el => el.addEventListener('change', calculateTotal));
+            radiosTimeline.forEach(el => el.addEventListener('change', calculateTotal));
+
+            // Init calculation
+            calculateTotal();
+        });
+    </script>
+
+
+    <!-- FAQ Accordion Section -->
+    <section class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span data-i18n="srv_faq_badge" class="fade-lang text-teal-600 font-bold uppercase tracking-wider text-sm">Ada Pertanyaan?</span>
+                <h2 data-i18n="srv_faq_title" class="fade-lang text-3xl md:text-5xl font-extrabold text-slate-900 mt-2">Tanya Jawab (FAQ)</h2>
+            </div>
+
+            <div class="space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item p-6 rounded-2xl bg-white border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 data-i18n="srv_q1" class="fade-lang font-bold text-lg text-slate-900 pr-8">Berapa lama estimasi pembuatan satu website?</h4>
+                        <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+                        <p data-i18n="srv_a1" class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">
+                            Estimasi waktu berkisar antara 2 hingga 6 minggu, sangat bergantung pada kompleksitas modul, fitur interaktivitas, dan integrasi API yang diinginkan.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item p-6 rounded-2xl bg-white border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 data-i18n="srv_q2" class="fade-lang font-bold text-lg text-slate-900 pr-8">Apakah website yang dibangun ramah untuk perangkat seluler?</h4>
+                        <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+                        <p data-i18n="srv_a2" class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">
+                            Ya, 100%! Seluruh produk digital kami didesain menggunakan filosofi Mobile-First, menjamin fungsionalitas yang luar biasa mulus di semua ponsel pintar, tablet, dan komputer desktop.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item p-6 rounded-2xl bg-white border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                    onclick="toggleAccordion(this)">
+                    <div class="flex justify-between items-center">
+                        <h4 data-i18n="srv_q3" class="fade-lang font-bold text-lg text-slate-900 pr-8">Teknologi apa yang paling sering digunakan?</h4>
+                        <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
+                        <p data-i18n="srv_a3" class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">
+                            Kami menguasai framework Laravel (untuk backend canggih), Tailwind CSS (untuk styling pixel-perfect), React/Vue (untuk web apps interaktif), dan server cloud AWS / Google Cloud.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+<%- include('partials/footer') %>

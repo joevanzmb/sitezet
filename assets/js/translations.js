@@ -114,56 +114,56 @@ const translations = {
 
         // Index - Hero
         hero_badge: `<i data-lucide="award" class="w-4 h-4 animate-pulse-glow"></i> Agensi Web Premium`,
-        hero_title_1: "Desain <br/>", hero_title_2: "Tanpa Batas.",
-        hero_desc: "Pengalaman digital khusus yang dibangun dengan presisi. Kami merancang platform ikonik yang melampaui standar template biasa.",
-        hero_btn_explore: "Eksplorasi Karya", hero_btn_process: "Keahlian Kami", hero_system_active: "Sistem Aktif",
+        hero_title_1: "Bikin Bisnis Anda <br/>", hero_title_2: "Tampil Mahal.",
+        hero_desc: "Tinggalkan desain template pasaran yang membosankan. Kami merancang ekosistem digital kelas atas yang tak hanya memukau, tapi siap menyulap pengunjung menjadi pelanggan setia Anda.",
+        hero_btn_explore: "Lihat Buktinya", hero_btn_process: "Cara Kerja Kami", hero_system_active: "Sistem Aktif",
 
         // Index - Trusted
         trusted_by: "Dipercaya oleh perusahaan inovatif di seluruh dunia",
 
         // Index - Services
-        srv_badge: "Keahlian Kami", srv_title: "Skalabilitas Tanpa Batas.",
+        srv_badge: "Solusi Eksklusif", srv_title: "Senjata Rahasia Scale-Up.",
         srv_desc: "Kami memberikan solusi digital menyeluruh yang menggabungkan estetika memukau dengan rekayasa yang kuat.",
         srv_1_title: "Aplikasi Web Custom", srv_1_desc: "Platform kompleks berkinerja tinggi yang dibangun di atas stack modern (React, Vue, Laravel), disesuaikan dengan kebutuhan operasi Anda.",
         srv_2_title: "Integrasi Sistem", srv_2_desc: "Menghubungkan API, sistem lama, dan berbagai tool untuk infrastruktur yang terpadu dengan mulus.",
         srv_3_title: "Arsitektur UI/UX", srv_3_desc: "Antarmuka berbasis data yang memprioritaskan alur pengguna, estetika, dan kemudahan akses.",
-        srv_4_title: "Butuh solusi custom?", srv_4_desc: "Mari petakan arsitektur sistem Anda bersama kami.",
-        srv_5_title: "Solusi E-Commerce", srv_5_desc: "Pengembangan toko online end-to-end dengan integrasi payment gateway, manajemen inventaris, dan alur checkout yang dioptimalkan untuk konversi.",
-        srv_6_title: "Optimasi SEO & Performa", srv_6_desc: "Optimasi Core Web Vitals, audit SEO teknis, dan kecepatan loading yang super cepat. Kami pastikan situs Anda ranking lebih tinggi dan konversi lebih baik.",
-        srv_7_title: "Manajemen Sistem", srv_7_desc: "Solusi manajemen sistem komprehensif termasuk pemantauan, pemeliharaan, dan optimasi untuk menjaga infrastruktur digital Anda tetap berkinerja optimal.",
+        srv_4_title: "Ingin mendominasi pasar?", srv_4_desc: "Mari kita rancang ekosistem digital impian Anda sekarang.",
+        srv_5_title: "Mesin E-Commerce", srv_5_desc: "Toko online otomatis dengan integrasi pembayaran cerdas yang dirancang khusus untuk meledakkan rasio konversi Anda.",
+        srv_6_title: "Optimasi SEO Ekstrem", srv_6_desc: "Website lemot bikin pelanggan kabur! Kami pastikan website Anda melesat kilat dan menguasai halaman pertama Google.",
+        srv_7_title: "Manajemen Sistem", srv_7_desc: "Anda fokus jualan, kami yang urus teknisnya. Solusi perawatan komprehensif agar server Anda tidak pernah down.",
 
         // Index - Process
-        process_badge: "Alur Kerja", process_title: "Cara Kami Membangun Website Anda.",
-        proc_1_t: "Konsultasi Paket", proc_1_d: "Diskusi kebutuhan bisnis & pilih paket yang paling tepat.",
-        proc_2_t: "Pengumpulan Materi", proc_2_d: "Anda menyiapkan materi seperti logo, teks, dan foto.",
-        proc_3_t: "Desain & Pembuatan", proc_3_d: "Kami mulai mendesain dan membangun website Anda.",
-        proc_4_t: "Review & Rilis", proc_4_d: "Revisi hasil jadi, lalu website Anda siap online ke publik!",
+        process_badge: "Bongkar Rahasia", process_title: "Langkah Menuju Dominasi Digital.",
+        proc_1_t: "Konsultasi Profit", proc_1_d: "Kita bedah masalah bisnis Anda dan temukan formula digital paling menguntungkan.",
+        proc_2_t: "Pengumpulan Amunisi", proc_2_d: "Siapkan logo dan materi, serahkan pada tim kami untuk diracik menjadi aset mematikan.",
+        proc_3_t: "Eksekusi & Coding", proc_3_d: "Sihir dimulai. Kami bangun website Anda dengan desain mahal dan performa ekstrem.",
+        proc_4_t: "Review & Meroket", proc_4_d: "Begitu sempurna, website Anda siap diluncurkan untuk memikat ribuan leads baru!",
 
         // Index - Works
-        works_badge: "Karya Terpilih", works_title: "Proyek Unggulan.", works_view_all: "Lihat Semua Galeri",
-        works_p1_title: "Platform Hub Perusahaan", works_p1_desc: "Portal manajemen komprehensif yang menyederhanakan operasi harian, peran pengguna, dan analitik data ke dalam satu antarmuka intuitif.",
+        works_badge: "Masterpiece", works_title: "Bukti Nyata Karya Kami.", works_view_all: "Buka Semua Galeri",
+        works_p1_title: "Enterprise Hub Platform", works_p1_desc: "Portal manajemen super cerdas, menyatukan operasi harian Anda ke dalam satu layar elegan yang sangat mudah dikendalikan.",
 
         // Index - FAQ
-        faq_badge: "FAQ", faq_title: "Pertanyaan Umum",
-        q1: "Berapa lama estimasi pengerjaan proyek web?", a1: "Tergantung kompleksitas fitur, platform web khusus biasanya membutuhkan 4 hingga 8 minggu dari awal hingga peluncuran.",
-        q2: "Apakah ada layanan dukungan teknis setelah rilis?", a2: "Tentu saja. Kami menyediakan paket pemeliharaan rutin agar platform Anda selalu aman dan mutakhir.",
-        q3: "Teknologi apa saja yang paling sering digunakan?", a3: "Kami sangat ahli dalam menggunakan ekosistem modern seperti Laravel, React, Tailwind CSS, serta infrastruktur cloud yang tangguh.",
-        q4: "Apakah bisa redesain website yang sudah ada?", a4: "Tentu! Kami mengkhususkan diri dalam mendesain ulang website lama menjadi platform modern dan responsif sambil menjaga peringkat SEO dan migrasi seluruh konten.",
-        q5: "Bagaimana komunikasi selama proyek berlangsung?", a5: "Kami menggunakan tools kolaborasi real-time dengan review sprint mingguan. Anda akan memiliki project manager khusus dan akses ke dashboard progres 24/7.",
+        faq_badge: "Tanya Jawab", faq_title: "Semua Keraguan Anda, Terjawab.",
+        q1: "Berapa lama website saya bisa selesai?", a1: "Sangat efisien. Biasanya butuh 4-8 minggu untuk menciptakan 'mesin uang' Anda dari nol hingga siap memikat audiens.",
+        q2: "Apakah ada garansi jika website error?", a2: "Pasti! Anda mendapat dukungan prioritas dari kami. Website Anda akan dijaga agar performanya selalu buas dan aman.",
+        q3: "Website buatan Anda pakai apa?", a3: "Kami benci template! Kami meracik website dengan teknologi papan atas (Laravel, React, Tailwind) layaknya startup global.",
+        q4: "Bisa perbaiki website lama saya yang kaku?", a4: "Sangat bisa! Kami akan rombak total website lama Anda menjadi eksklusif, super cepat, dan pastinya peringkat Google Anda makin meroket.",
+        q5: "Gimana cara kita komunikasi nantinya?", a5: "Santai, kita buat grup WhatsApp khusus. Anda akan didampingi Project Manager setia yang siap update progres 24/7 tanpa ribet.",
 
         // Index - Stats
         stat_1: "Proyek Selesai", stat_2: "Kepuasan Klien", stat_3: "Tahun Pengalaman", stat_4: "Dukungan Teknis",
 
         // Index - Tech
-        tech_badge: "Tech Stack", tech_title: "Teknologi Andalan Kami.",
+        tech_badge: "Tech Stack", tech_title: "Teknologi Papan Atas.",
 
         // Founder Vision
-        vis_quote: '"Kami tidak sekadar menulis kode; kami merancang ekosistem digital. Dedikasi kami adalah pada kualitas kode murni dan desain ikonik yang mengangkat brand Anda."',
+        vis_quote: '"Kami tidak sekadar menulis barisan kode. Kami merakit ekosistem digital mewah yang mengangkat derajat brand Anda jauh meninggalkan kompetitor."',
         vis_role: "Lead Engineer & Visioner",
 
         // Footer
-        ft_title: 'Siap membangun sesuatu yang <br class="hidden sm:block"/> <span class="text-white font-bold">ikonik</span> bersama?',
-        ft_btn: "Mulai proyek", ft_dir: "Direktori", ft_soc: "Sosial",
+        ft_title: 'Siap mengubah brand Anda menjadi <br class="hidden sm:block"/> <span class="text-white font-bold">raksasa digital?</span>',
+        ft_btn: "Ambil Penawaran Khusus", ft_dir: "Direktori", ft_soc: "Sosial",
 
         // About page
         abt_badge: "TENTANG KAMI",

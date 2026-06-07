@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitezet | Crafting The Future</title>
+    <link rel="icon" type="image/png" href="/assets/sitezet.png">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Sitezet adalah digital agency premium yang berfokus pada pembuatan website, web apps kustom, dan optimasi performa tinggi untuk bisnis modern.">
+    <meta name="keywords"
+        content="digital agency, pembuatan website, web developer, custom web app, SEO, Laravel, React">
+    <meta name="author" content="Sitezet Digital Agency">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Sitezet | Crafting The Future">
+    <meta property="og:description"
+        content="Tingkatkan bisnis Anda ke level berikutnya dengan website premium, cepat, dan profesional dari Sitezet.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sitezet.com">
+    <meta property="og:image" content="assets/sitezet-logo.jpg">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/jpeg" href="assets/sitezet-logo.jpg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        },
+                        slate: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            900: '#0f172a',
+                        }
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                        'wiggle': 'wiggle 3s ease-in-out infinite',
+                        'spin-slow': 'spin 8s linear infinite',
+                        'pulse-glow': 'pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'bounce-x': 'bounce-x 1s infinite'
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        },
+                        wiggle: {
+                            '0%, 100%': { transform: 'rotate(-5deg)' },
+                            '50%': { transform: 'rotate(5deg)' },
+                        },
+                        'pulse-glow': {
+                            '0%, 100%': { opacity: 1, filter: 'drop-shadow(0 0 8px rgba(20, 184, 166, 0.8))' },
+                            '50%': { opacity: .7, filter: 'drop-shadow(0 0 2px rgba(20, 184, 166, 0.3))' },
+                        },
+                        'bounce-x': {
+                            '0%, 100%': { transform: 'translateX(0)' },
+                            '50%': { transform: 'translateX(25%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+
+        /* Only page-specific styles kept here; shared styles in assets/css/style.css */
+    </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-teal-500 selection:text-white relative overflow-x-hidden">
+
+    <div class="noise-overlay"></div>
+
+    <!-- Sticky Navbar -->
+    <nav class="fixed w-full top-0 z-50 transition-all duration-300 pt-6 px-6 lg:px-12" id="navbar">
+        <!-- Desktop Floating Nav Card -->
+        <div
+            class="hidden lg:grid grid-cols-5 items-center justify-items-center w-full max-w-[95%] lg:max-w-5xl xl:max-w-6xl mx-auto bg-white/90 backdrop-blur-md px-8 md:px-12 xl:px-16 py-5 rounded-full border border-gray-200/50 shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+            <a href="about.html" data-i18n="nav_about"
+                class="desktop-nav-link fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Tentang</a>
+            <a href="services.html" data-i18n="nav_services"
+                class="desktop-nav-link fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Layanan</a>
+
+            <!-- Logo in the middle (perfectly centered) -->
+            <a href="index.html"
+                class="text-3xl md:text-4xl font-extrabold tracking-tight group transition-transform hover:scale-105 duration-300 w-full text-center">
+                <span class="text-slate-900">site</span><span class="text-teal-600">zet</span>
+            </a>
+
+            <a href="works.html" data-i18n="nav_project"
+                class="desktop-nav-link fade-lang text-base font-semibold text-gray-500 hover:text-teal-600 transition-colors w-full text-center">Proyek</a>
+            <a href="contact.html" data-i18n="nav_contact"
+                class="fade-lang text-sm font-bold text-white bg-teal-500 hover:bg-slate-900 transition-all px-6 py-2.5 rounded-full shadow-md shadow-teal-500/20 w-max justify-self-center">Kontak</a>
+        </div>
+
+        <!-- Language Toggle (Desktop) -->
+        <div class="hidden lg:block absolute right-6 lg:right-12 top-1/2 -translate-y-1/2 z-10">
+            <button onclick="toggleLang()"
+                class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/80 backdrop-blur-sm border border-gray-200/50 shadow-sm hover:shadow-md hover:border-teal-200 transition-all text-xs font-bold">
+                <span class="lang-btn" data-lang="id">ID</span>
+                <span class="text-gray-300">/</span>
+                <span class="lang-btn text-gray-400" data-lang="en">EN</span>
+            </button>
+        </div>
+
+        <!-- Mobile Floating Nav Card -->
+        <div
+            class="lg:hidden flex items-center justify-between w-full bg-white/90 backdrop-blur-md px-6 py-4 rounded-full border border-gray-200/50 shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+            <a href="index.html"
+                class="text-2xl font-bold tracking-tight group transition-transform hover:scale-105 duration-300">
+                <span class="text-slate-900">site</span><span class="text-teal-600">zet</span>
+            </a>
+
+            <button id="mobile-menu-btn" class="text-slate-900">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-[60] lg:hidden bg-slate-900/60 backdrop-blur-md">
+        <div id="mobile-menu-drawer"
+            class="absolute top-0 right-0 w-[85%] max-w-sm h-full bg-white shadow-2xl overflow-y-auto">
+            

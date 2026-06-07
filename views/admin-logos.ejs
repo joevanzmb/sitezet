@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Logo Klien | Admin Sitezet</title>
+    <link rel="icon" type="image/png" href="/assets/sitezet.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen flex flex-col md:flex-row">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-64 bg-slate-900 text-slate-300 flex flex-col shrink-0">
+        <div class="p-6 border-b border-slate-800">
+            <div class="text-2xl font-extrabold tracking-tight flex items-center">
+                <div><span class="text-white">site</span><span class="text-teal-500">zet</span></div>
+                <span class="px-2 py-0.5 bg-slate-800 text-teal-400 text-[10px] font-bold rounded-full ml-2">ADMIN</span>
+            </div>
+        </div>
+        <nav class="p-4 flex-1 space-y-2">
+            <a href="/admin" class="flex items-center gap-3 px-4 py-3 bg-teal-500/10 text-teal-400 rounded-xl font-medium transition-colors">
+                <i data-lucide="image" class="w-5 h-5"></i>
+                Logo Klien
+            </a>
+        </nav>
+        <div class="p-4 border-t border-slate-800">
+            <a href="/admin/logout" class="flex items-center gap-3 px-4 py-3 hover:bg-red-500/10 text-slate-400 hover:text-red-400 rounded-xl font-medium transition-colors">
+                <i data-lucide="log-out" class="w-5 h-5"></i>
+                Logout
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 p-6 lg:p-10">
+        <div class="max-w-5xl mx-auto">
+            
+            <% if (typeof success !== 'undefined' && success) { %>
+                <div class="mb-6 p-4 rounded-xl flex items-center gap-3 <%= success === 'added' ? 'bg-teal-50 border-teal-200 text-teal-700' : 'bg-rose-50 border-rose-200 text-rose-700' %> border">
+                    <i data-lucide="<%= success === 'added' ? 'check-circle-2' : 'info' %>" class="w-5 h-5"></i>
+                    <p class="font-medium">
+                        <%= success === 'added' ? 'Berhasil menambahkan logo baru!' : 'Logo berhasil dihapus.' %>
+                    </p>
+                </div>
+            <% } %>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                <div>
+                    <h1 class="text-3xl font-extrabold text-slate-900">Kelola Logo Klien</h1>
+                    <p class="text-slate-500 mt-1">Logo yang ada di sini akan tampil di bagian 'Trusted By' halaman utama.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Form Tambah Logo -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm sticky top-6">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-10 h-10 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center">
+                                <i data-lucide="plus-circle" class="w-5 h-5"></i>
+                            </div>
+                            <h2 class="text-lg font-bold text-slate-900">Tambah Logo</h2>
+                        </div>
+                        
+                        <form action="/admin/logos/add" method="POST" enctype="multipart/form-data" class="space-y-5">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">Nama Perusahaan</label>
+                                <input type="text" name="name" required 
+                                    class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all"
+                                    placeholder="Contoh: Telkomsel">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-2">File Gambar Logo</label>
+                                <div id="uploadArea" class="w-full px-4 py-6 bg-slate-50 border-2 border-dashed border-slate-200 rounded-xl text-center hover:border-teal-400 transition-colors relative cursor-pointer">
+                                    <div id="uploadContent">
+                                        <i data-lucide="upload-cloud" class="w-8 h-8 mx-auto text-slate-400 mb-2"></i>
+                                        <span class="text-sm text-slate-500 font-medium">Klik untuk pilih file</span>
+                                        <p class="text-xs text-slate-400 mt-1">Disarankan format PNG transparan atau SVG</p>
+                                    </div>
+                                    <img id="imagePreview" class="hidden max-h-24 mx-auto object-contain pointer-events-none">
+                                    <input type="file" id="logoImageInput" name="logoImage" accept="image/*" required 
+                                        class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 px-4 rounded-xl transition-colors flex items-center justify-center gap-2">
+                                Simpan Logo
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Daftar Logo -->
+                <div class="lg:col-span-2">
+                    <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+                        <div class="px-6 py-5 border-b border-slate-100 flex items-center justify-between bg-slate-50/50">
+                            <h2 class="font-bold text-slate-900">Daftar Logo Aktif (<%= logos.length %>)</h2>
+                        </div>
+                        
+                        <div class="p-6">
+                            <% if (logos.length === 0) { %>
+                                <div class="text-center py-12">
+                                    <div class="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <i data-lucide="image-off" class="w-8 h-8 text-slate-400"></i>
+                                    </div>
+                                    <h3 class="text-lg font-bold text-slate-900 mb-1">Belum ada logo</h3>
+                                    <p class="text-slate-500 text-sm">Tambahkan logo pertama Anda melalui form di samping.</p>
+                                </div>
+                            <% } else { %>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <% logos.forEach(function(logo) { %>
+                                        <div class="border border-slate-200 rounded-2xl p-4 flex items-center gap-4 group hover:border-teal-200 transition-colors bg-white">
+                                            <div class="w-16 h-16 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center p-2 shrink-0">
+                                                <% if (logo.imageUrl) { %>
+                                                    <img src="<%= logo.imageUrl %>" alt="<%= logo.name %>" class="max-w-full max-h-full object-contain">
+                                                <% } else { %>
+                                                    <i data-lucide="hexagon" class="w-6 h-6 text-slate-400"></i>
+                                                <% } %>
+                                            </div>
+                                            <div class="flex-1 min-w-0">
+                                                <h4 class="font-bold text-slate-900 text-sm truncate"><%= logo.name %></h4>
+                                                <p class="text-xs text-slate-500 mt-0.5 truncate">ID: <%= logo.id %></p>
+                                            </div>
+                                            <form action="/admin/logos/delete/<%= logo.id %>" method="POST" onsubmit="return confirm('Yakin ingin menghapus logo ini?');">
+                                                <button type="submit" class="w-8 h-8 rounded-lg bg-red-50 text-red-500 flex items-center justify-center hover:bg-red-500 hover:text-white transition-colors" title="Hapus">
+                                                    <i data-lucide="trash-2" class="w-4 h-4"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    <% }); %>
+                                </div>
+                            <% } %>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+
+        // Image Preview Logic
+        const imageInput = document.getElementById('logoImageInput');
+        const imagePreview = document.getElementById('imagePreview');
+        const uploadContent = document.getElementById('uploadContent');
+
+        imageInput.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.classList.remove('hidden');
+                    uploadContent.classList.add('hidden');
+                }
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = '';
+                imagePreview.classList.add('hidden');
+                uploadContent.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
