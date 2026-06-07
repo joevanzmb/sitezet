@@ -200,11 +200,11 @@ document.addEventListener('DOMContentLoaded', function () {
         var content = element.querySelector('.' + contentClass);
         if (!content) return;
         var iconWrapper = element.querySelector('.icon-wrapper');
-        var isOpen = content.classList.contains('max-h-[500px]');
+        var isOpen = content.classList.contains('max-h-[1200px]');
 
         if (!isOpen) {
             content.classList.remove('max-h-0', 'opacity-0');
-            content.classList.add('max-h-[500px]', 'opacity-100');
+            content.classList.add('max-h-[1200px]', 'opacity-100');
             if (iconWrapper) {
                 if (contentClass === 'faq-content') {
                     iconWrapper.style.transform = 'rotate(180deg)';
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         } else {
-            content.classList.remove('max-h-[500px]', 'opacity-100');
+            content.classList.remove('max-h-[1200px]', 'opacity-100');
             content.classList.add('max-h-0', 'opacity-0');
             if (iconWrapper) iconWrapper.style.transform = 'rotate(0deg)';
         }
@@ -243,6 +243,46 @@ document.addEventListener('DOMContentLoaded', function () {
         element.classList.add('active');
         var clickedIconWrapper = element.querySelector('.icon-wrapper');
         if (clickedIconWrapper) clickedIconWrapper.style.transform = 'rotate(45deg)';
+    };
+
+    // 9. Send WhatsApp Form
+    window.sendWhatsApp = function() {
+        var name = document.getElementById('waName').value.trim();
+        var needs = document.getElementById('waNeeds').value.trim();
+        
+        if(!name || !needs) {
+            alert('Mohon isi Nama Lengkap dan Deskripsi Kebutuhan terlebih dahulu.');
+            return;
+        }
+
+        var message = "Halo tim Sitezet! 👋\n\nNama saya *" + name + "*.\n\nSaya ingin berdiskusi mengenai kebutuhan digital bisnis saya:\n_" + needs + "_\n\nMohon panduannya. Terima kasih!";
+        var phone = "6282132579131";
+        var waUrl = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + encodeURIComponent(message);
+        
+        window.open(waUrl, '_blank');
+    };
+
+    // 10. Open CTA Form from Pricing
+    window.openCTAForm = function(paketName) {
+        var ctaForm = document.getElementById('cta-form');
+        if (ctaForm) {
+            // Scroll to form smoothly
+            ctaForm.scrollIntoView({behavior: 'smooth', block: 'center'});
+            
+            // Check if it's currently closed, if yes, click it to open
+            var content = ctaForm.querySelector('.cta-content');
+            if (content && content.classList.contains('max-h-0')) {
+                ctaForm.click();
+            }
+            
+            // Fill the needs text area automatically
+            if (paketName) {
+                var waNeeds = document.getElementById('waNeeds');
+                if (waNeeds) {
+                    waNeeds.value = "Halo, saya tertarik dengan " + paketName + ". Mohon info lebih detail tentang paket ini.";
+                }
+            }
+        }
     };
 
 });
