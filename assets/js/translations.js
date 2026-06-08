@@ -7,15 +7,18 @@ const translations = {
 
         // Index - Hero
         hero_badge: `<i data-lucide="award" class="w-4 h-4 animate-pulse-glow"></i> Premium Web Agency`,
-        hero_title_1: "Design <br/>", hero_title_2: "Beyond Limits.",
+        hero_title_1: "Take Your Business <br class='hidden lg:block' />", 
+        hero_title_2: "<span class='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-300 drop-shadow-md'>Digital</span> & Professional.",
         hero_desc: "Bespoke digital experiences built with precision. We engineer iconic platforms that transcend standard templates.",
-        hero_btn_explore: "Explore Works", hero_btn_process: "Our Expertise", hero_system_active: "System Active",
+        hero_btn_explore: "View Our Portfolio", hero_btn_process: "Free Consultation", hero_system_active: "System Active",
+        hero_sub_1: 'Trust your digital business needs to us,<br /> because at Sitezet, we deliver fast!',
+        hero_sub_2: 'Trust your digital business needs to us,<br /> because <span class="font-bold">at Sitezet, we deliver fast!</span>',
 
         // Index - Trusted
-        trusted_by: "Trusted by innovative companies worldwide",
+        trusted_by: "Trusted By",
 
         // Index - Services
-        srv_badge: "Our Services", srv_title: "Digital Solutions For Your Business.",
+        srv_badge: "Our Services", srv_title: "Digital Solutions For <span class='text-teal-600'>Your Business.</span>",
         srv_desc: "We deliver end-to-end digital solutions that combine striking aesthetics with robust engineering.",
         srv_1_title: "Company Profile & Landing Page", srv_1_desc: "Representative websites to build your brand credibility in the digital world. Look professional and convincing to prospective clients.",
         srv_1_f1: "Premium Exclusive Design", srv_1_f2: "Persuasive Copywriting", srv_1_f3: "SEO-Friendly Structure",
@@ -29,25 +32,45 @@ const translations = {
         srv_6_title: "Extreme SEO Optimization", srv_6_desc: "Slow websites drive customers away! We ensure your website loads blazingly fast and dominates Google's first page.",
         srv_7_title: "Maintenance & Security", srv_7_desc: "We don't just build; we ensure your website is well-maintained, secure from hacks, and your server never goes down.",
         srv_5_f1: "Anti-Hack & Malware Protection", srv_5_f2: "Regular Cloud Backups", srv_5_f3: "99.9% Uptime Guarantee",
+        
+        // Index - Why Us
+        why_title: 'Why choose <span class="text-teal-600 animate-pulse-glow">sitezet</span>',
+        why_1_t: "Anti <br class='hidden lg:block'>Template <br class='hidden lg:block'>Club", why_1_d: "Not a generic template. We design it specifically tailored to your brand's unique identity.",
+        why_2_t: "Lightning <br class='hidden lg:block'>Fast <br class='hidden lg:block'>Process", why_2_d: "Extremely fast workflow. Your website will be ready to launch in just 1-2 weeks.",
+        why_3_t: "Drama-Free <br class='hidden lg:block'>Tech <br class='hidden lg:block'>Support", why_3_d: "Our technical support team is always ready to assist you whenever you face operational issues.",
+        why_4_t: "Budget <br class='hidden lg:block'>Friendly <br class='hidden lg:block'>Cost", why_4_d: "Affordable pricing because our mission is to help small businesses go digital without financial burden.",
+        
+        // Index - Pricing
+        price_title_1: "Affordable Cost,", price_title_2: 'Stunning <span class="text-teal-600">Results.</span>',
+        price_1_t: "Promo Landing Page", price_1_d: "Perfect for specific product/service promotions & fast lead generation.",
+        price_1_f1: "Premium & Modern 1-Page Design", price_1_f2: "Persuasive Copywriting (Sales-focused)", price_1_f3: "Interactive Floating WhatsApp Button", price_1_f4: "Mobile-First & Super Fast Loading", price_1_f5: "Basic Facebook Pixel / Google Analytics",
+        price_1_btn: "Choose This Package",
+        price_2_t: "Company Profile", price_2_d: "Boost your company's credibility & professional digital profile.",
+        price_2_f1: "Up to 5 Dynamic & Exclusive Pages", price_2_f2: "Portfolio Gallery & Testimonials Section", price_2_f3: "Direct-to-Email Contact Form", price_2_f4: "Integrated Business Location Map", price_2_f5: "Basic On-Page SEO Optimization",
+        price_2_btn: "Choose This Package",
+        price_3_t: "Custom Web App", price_3_d: "SaaS or Portal system solutions tailored to your business logic.",
+        price_3_f1: "Custom System Based on Company Workflow", price_3_f2: "Internal Portal & HR/Employee Management", price_3_f3: "Advanced Security Level", price_3_f4: "Third-Party API Integration (ERP, CRM, etc.)", price_3_f5: "Scalable Database Architecture",
+        price_3_btn: "Choose This Package",
+        price_swipe: "Swipe to see more packages",
 
         // Index - Process
-        process_badge: "Workflow", process_title: "How We Craft Perfection.",
-        proc_1_t: "Consultation", proc_1_d: "We discuss your goals and help you pick the right package.",
-        proc_2_t: "Content Gathering", proc_2_d: "You provide logos, texts, and images. We organize them.",
-        proc_3_t: "Design & Build", proc_3_d: "We craft your website with premium design and clean code.",
-        proc_4_t: "Review & Launch", proc_4_d: "Final review, revisions if needed, and we go live!",
+        process_badge: "Workflow", process_title: "How We Craft Perfection.", process_big_title: "System<br>Workflow.",
+        proc_1_t: "Requirements & Consulting", proc_1_d: "Communicate system requirements, followed by an in-depth consultation session and initial review.",
+        proc_2_t: "Documentation & 50% Deposit", proc_2_d: "We deliver feature specs, costs, and timeline documents. Upon agreement, work begins after a 50% deposit.",
+        proc_3_t: "Final Payment & Deployment", proc_3_d: "Once 100% completed, the final payment is made, domain selected, and it's ready for public deployment.",
+        proc_4_t: "Revision & Maintenance", proc_4_d: "Free reasonable minor revisions (non-system). Major revisions incur extra costs. Maintenance follows the hosting package.",
 
         // Index - Works
         works_badge: "Selected Works", works_title: "Featured Project.", works_view_all: "View All Gallery",
         works_p1_title: "Enterprise Hub Platform", works_p1_desc: "A comprehensive management portal streamlining daily operations, user roles, and data analytics into one intuitive interface. Built for scale.",
 
         // Index - FAQ
-        faq_badge: "FAQ", faq_title: "Common Questions",
-        q1: "What is the typical timeline for a custom project?", a1: "Depending on complexity, typical web platforms take between 4 to 8 weeks from discovery to launch.",
-        q2: "Do you offer post-launch support and maintenance?", a2: "Absolutely. We provide continuous maintenance packages to ensure your platform remains secure and up-to-date.",
-        q3: "What technology stack do you specialize in?", a3: "We are experts in modern stacks including Laravel, Livewire, React, Tailwind CSS, and scalable cloud infrastructures.",
-        q4: "Can you redesign our existing website?", a4: "Yes! We specialize in redesigning legacy websites into modern, responsive platforms while preserving your SEO rankings and migrating all existing content seamlessly.",
-        q5: "How do you handle project communication?", a5: "We use real-time collaboration tools with weekly sprint reviews. You'll have a dedicated project manager and access to our progress dashboard 24/7.",
+        faq_badge: "FAQ", faq_title: "Frequently Asked Questions",
+        q1: "What specific services does your agency offer?", a1: "We provide comprehensive digital solutions including Custom Web Applications, Company Profiles, UI/UX Redesign, and Advanced SEO Optimization.",
+        q2: "How much does a typical project cost?", a2: "Project costs vary based on features and complexity. However, we offer highly competitive pricing tailored to your specific business needs without compromising on premium quality.",
+        q3: "What is the estimated timeline for completion?", a3: "Most projects are successfully launched within 2 to 6 weeks, ensuring a perfect balance between rapid delivery and uncompromising premium quality.",
+        q4: "Will my website be mobile-responsive?", a4: "Yes, absolutely! Every digital product we craft is optimized using a Mobile-First approach, guaranteeing flawless performance across smartphones, tablets, and desktops.",
+        q5: "Do you provide post-launch maintenance?", a5: "Certainly. We offer continuous maintenance, regular security updates, and priority technical support to keep your platform secure and running smoothly 24/7.",
 
         // Index - Stats
         stat_1: "Projects Delivered", stat_2: "Client Satisfaction", stat_3: "Years Experience", stat_4: "Technical Support",
@@ -119,15 +142,18 @@ const translations = {
 
         // Index - Hero
         hero_badge: `<i data-lucide="award" class="w-4 h-4 animate-pulse-glow"></i> Agensi Web Premium`,
-        hero_title_1: "Bikin Bisnis Anda <br/>", hero_title_2: "Tampil Mahal.",
+        hero_title_1: "Bikin Bisnismu <br class='hidden lg:block' />", 
+        hero_title_2: "<span class='text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-300 drop-shadow-md'>Go Digital</span> & Profesional.",
         hero_desc: "Tinggalkan desain template pasaran yang membosankan. Kami merancang ekosistem digital kelas atas yang tak hanya memukau, tapi siap menyulap pengunjung menjadi pelanggan setia Anda.",
-        hero_btn_explore: "Lihat Buktinya", hero_btn_process: "Cara Kerja Kami", hero_system_active: "Sistem Aktif",
+        hero_btn_explore: "Lihat Portofolio Kami", hero_btn_process: "Konsultasi Gratis", hero_system_active: "Sistem Aktif",
+        hero_sub_1: 'Percayakan kebutuhan digital bisnismu ke kami,<br /> karena di Sitezet pasti satset!',
+        hero_sub_2: 'Percayakan kebutuhan digital bisnismu ke kami,<br /> karena <span class="font-bold">di Sitezet pasti satset!</span>',
 
         // Index - Trusted
-        trusted_by: "Dipercaya oleh perusahaan inovatif di seluruh dunia",
+        trusted_by: "Dipercaya Oleh",
 
         // Index - Services
-        srv_badge: "Layanan Kami", srv_title: "Solusi Digital Untuk Bisnis Anda.",
+        srv_badge: "Layanan Kami", srv_title: "Solusi Digital Untuk <span class='text-teal-600'>Bisnis Anda.</span>",
         srv_desc: "Kami memberikan solusi digital menyeluruh yang menggabungkan estetika memukau dengan rekayasa yang kuat.",
         srv_1_title: "Company Profile & Landing Page", srv_1_desc: "Website representatif untuk membangun kredibilitas brand Anda di dunia digital. Tampil profesional dan meyakinkan di mata calon klien.",
         srv_1_f1: "Desain Eksklusif Premium", srv_1_f2: "Copywriting Menjual", srv_1_f3: "Struktur SEO Friendly",
@@ -141,25 +167,45 @@ const translations = {
         srv_6_title: "Optimasi SEO Ekstrem", srv_6_desc: "Website lemot bikin pelanggan kabur! Kami pastikan website Anda melesat kilat dan mendominasi halaman pertama Google.",
         srv_7_title: "Maintenance & Keamanan", srv_7_desc: "Tidak sekadar membuat, kami pastikan website Anda terawat dengan baik, aman dari peretasan, dan server tidak pernah down.",
         srv_5_f1: "Anti-Retas & Perlindungan Malware", srv_5_f2: "Backup Cloud Berkala", srv_5_f3: "Jaminan Uptime 99.9%",
+        
+        // Index - Why Us
+        why_title: 'Kenapa harus <span class="text-teal-600 animate-pulse-glow">sitezet</span>',
+        why_1_t: "Anti <br class='hidden lg:block'>Template <br class='hidden lg:block'>Club", why_1_d: "Desain bukan template dan tidak pasaran, kami merancangnya khusus menyesuaikan dengan identitas brand Anda.",
+        why_2_t: "Proses <br class='hidden lg:block'>Pengerjaan <br class='hidden lg:block'>Sat-Set", why_2_d: "Pengerjaan sangat cepat, website Anda akan siap untuk diluncurkan hanya dalam waktu 1-2 minggu saja.",
+        why_3_t: "Dukungan <br class='hidden lg:block'>Bebas <br class='hidden lg:block'>Drama", why_3_d: "Tim dukungan teknis kami selalu siap membantu jika Anda mengalami kendala operasional kapan saja.",
+        why_4_t: "Nggak <br class='hidden lg:block'>Bikin <br class='hidden lg:block'>Boncos", why_4_d: "Harga terjangkau karena misi kami adalah membantu para pelaku UMKM untuk segera go digital tanpa beban.",
+        
+        // Index - Pricing
+        price_title_1: "Biaya Terjangkau,", price_title_2: 'Hasil <span class="text-teal-600">Memukau.</span>',
+        price_1_t: "Landing Page Promo", price_1_d: "Cocok untuk promosi produk/jasa spesifik & lead generation cepat.",
+        price_1_f1: "Desain 1 Halaman Premium & Kekinian", price_1_f2: "Copywriting Persuasif (Menjual)", price_1_f3: "Tombol Floating WhatsApp Interaktif", price_1_f4: "Mobile-First & Loading Super Cepat", price_1_f5: "Integrasi Facebook Pixel / Google Analytics Dasar",
+        price_1_btn: "Pilih Paket Ini",
+        price_2_t: "Company Profile", price_2_d: "Tingkatkan kredibilitas & profil profesional perusahaan Anda.",
+        price_2_f1: "Maksimal 5 Halaman Dinamis & Eksklusif", price_2_f2: "Galeri Portofolio & Bagian Testimoni", price_2_f3: "Form Kontak Langsung Masuk ke Email", price_2_f4: "Peta Lokasi Bisnis (Google Maps) Terintegrasi", price_2_f5: "Optimasi SEO Dasar (On-Page) untuk Google",
+        price_2_btn: "Pilih Paket Ini",
+        price_3_t: "Custom Web App", price_3_d: "Solusi sistem SaaS atau Portal sesuai logika bisnis Anda.",
+        price_3_f1: "Sistem Kustom Berdasarkan Workflow Perusahaan", price_3_f2: "Portal Internal & Manajemen Karyawan/HRD", price_3_f3: "Keamanan Tingkat Lanjut (Advance Security)", price_3_f4: "Integrasi API Pihak Ketiga (ERP, CRM, dll)", price_3_f5: "Arsitektur Database Scalable untuk Jutaan User",
+        price_3_btn: "Pilih Paket Ini",
+        price_swipe: "Geser untuk melihat paket lain",
 
         // Index - Process
-        process_badge: "Bongkar Rahasia", process_title: "Langkah Menuju Dominasi Digital.",
-        proc_1_t: "Konsultasi Profit", proc_1_d: "Kita bedah masalah bisnis Anda dan temukan formula digital paling menguntungkan.",
-        proc_2_t: "Pengumpulan Amunisi", proc_2_d: "Siapkan logo dan materi, serahkan pada tim kami untuk diracik menjadi aset mematikan.",
-        proc_3_t: "Eksekusi & Coding", proc_3_d: "Sihir dimulai. Kami bangun website Anda dengan desain mahal dan performa ekstrem.",
-        proc_4_t: "Review & Meroket", proc_4_d: "Begitu sempurna, website Anda siap diluncurkan untuk memikat ribuan leads baru!",
+        process_badge: "Bongkar Rahasia", process_title: "Langkah Menuju Dominasi Digital.", process_big_title: "Workflow<br>Sistem.",
+        proc_1_t: "Kebutuhan & Konsultasi", proc_1_d: "Menginformasikan kebutuhan sistem (requirements), dilanjutkan dengan sesi konsultasi mendalam dan review awal.",
+        proc_2_t: "Dokumen & DP 50%", proc_2_d: "Kami mengirimkan dokumen fitur, biaya, dan timeline. Jika deal, pengerjaan dimulai setelah pembayaran DP 50%.",
+        proc_3_t: "Pelunasan & Deploy", proc_3_d: "Setelah 100% selesai (done), dilakukan pelunasan, pemilihan nama domain, dan siap deploy ke publik.",
+        proc_4_t: "Revisi & Maintenance", proc_4_d: "Bebas revisi minor wajar (bukan fitur/sistem). Revisi besar ada biaya tambahan. Maintenance sesuai paket hosting.",
 
         // Index - Works
         works_badge: "Masterpiece", works_title: "Bukti Nyata Karya Kami.", works_view_all: "Buka Semua Galeri",
         works_p1_title: "Enterprise Hub Platform", works_p1_desc: "Portal manajemen super cerdas, menyatukan operasi harian Anda ke dalam satu layar elegan yang sangat mudah dikendalikan.",
 
         // Index - FAQ
-        faq_badge: "Tanya Jawab", faq_title: "Semua Keraguan Anda, Terjawab.",
-        q1: "Berapa lama website saya bisa selesai?", a1: "Sangat efisien. Biasanya butuh 4-8 minggu untuk menciptakan 'mesin uang' Anda dari nol hingga siap memikat audiens.",
-        q2: "Apakah ada garansi jika website error?", a2: "Pasti! Anda mendapat dukungan prioritas dari kami. Website Anda akan dijaga agar performanya selalu buas dan aman.",
-        q3: "Website buatan Anda pakai apa?", a3: "Kami benci template! Kami meracik website dengan teknologi papan atas (Laravel, React, Tailwind) layaknya startup global.",
-        q4: "Bisa perbaiki website lama saya yang kaku?", a4: "Sangat bisa! Kami akan rombak total website lama Anda menjadi eksklusif, super cepat, dan pastinya peringkat Google Anda makin meroket.",
-        q5: "Gimana cara kita komunikasi nantinya?", a5: "Santai, kita buat grup WhatsApp khusus. Anda akan didampingi Project Manager setia yang siap update progres 24/7 tanpa ribet.",
+        faq_badge: "Tanya Jawab", faq_title: "Frequently Asked Questions",
+        q1: "Layanan apa saja yang disediakan oleh agensi ini?", a1: "Kami menyediakan solusi digital menyeluruh mulai dari Pembuatan Custom Web App, Profil Perusahaan, Desain Ulang UI/UX, hingga Optimasi SEO tingkat lanjut.",
+        q2: "Berapa estimasi biaya untuk satu proyek?", a2: "Biaya sangat bergantung pada fitur dan tingkat kesulitan. Namun, kami menawarkan harga yang sangat bersaing dan disesuaikan dengan kebutuhan spesifik bisnis Anda tanpa mengorbankan kualitas premium.",
+        q3: "Berapa lama proses pengerjaannya?", a3: "Sebagian besar proyek diselesaikan dalam waktu 2 hingga 6 minggu, memastikan keseimbangan sempurna antara pengerjaan cepat dan hasil yang memukau.",
+        q4: "Apakah website saya akan tampil rapi di HP?", a4: "Tentu saja! Setiap produk digital yang kami rancang dioptimalkan dengan pendekatan Mobile-First, menjamin tampilan sempurna di ponsel pintar, tablet, maupun desktop.",
+        q5: "Apakah ada dukungan garansi setelah website selesai?", a5: "Pasti! Kami menyediakan pemeliharaan berkala, update keamanan, dan dukungan teknis prioritas agar platform Anda tetap tangguh dan berjalan lancar 24/7.",
 
         // Index - Stats
         stat_1: "Proyek Selesai", stat_2: "Kepuasan Klien", stat_3: "Tahun Pengalaman", stat_4: "Dukungan Teknis",

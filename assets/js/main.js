@@ -182,6 +182,33 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
+        // Handle Typed.js dynamically based on language
+        if (typeof Typed !== 'undefined' && document.getElementById('typed-subtitle')) {
+            if (window.heroTyped) {
+                window.heroTyped.destroy();
+            }
+            setTimeout(function() {
+                var s1 = translations[lang] && translations[lang]['hero_sub_1'] ? translations[lang]['hero_sub_1'] : "";
+                var s2 = translations[lang] && translations[lang]['hero_sub_2'] ? translations[lang]['hero_sub_2'] : "";
+                document.getElementById('typed-subtitle').innerHTML = ""; // Clear existing string
+                
+                window.heroTyped = new Typed('#typed-subtitle', {
+                    strings: [s1, s2],
+                    typeSpeed: 30,
+                    backSpeed: 20,
+                    backDelay: 1000,
+                    smartBackspace: true,
+                    showCursor: true,
+                    cursorChar: '|',
+                    autoInsertCss: true,
+                    onComplete: function(self) {
+                        var cursor = document.querySelector('.typed-cursor');
+                        if(cursor) cursor.style.display = 'none';
+                    }
+                });
+            }, instant ? 0 : 300);
+        }
+
         window.currentLang = lang;
     };
 

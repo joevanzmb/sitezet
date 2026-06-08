@@ -84,16 +84,16 @@
 
     <!-- Wrapper for seamless white background and curved bottom -->
     <div
-        class="bg-white rounded-b-[4rem] sm:rounded-b-[6rem] lg:rounded-b-[8rem] overflow-hidden shadow-sm relative z-20">
+        class="bg-white rounded-b-[2rem] sm:rounded-b-[6rem] lg:rounded-b-[8rem] overflow-hidden shadow-sm relative z-20">
         <!-- Interactive Light Hero Section -->
         <section id="home"
-            class="relative min-h-[115vh] lg:min-h-[125vh] flex items-center pt-24 pb-20 overflow-hidden bg-slate-900 rounded-b-[4rem] sm:rounded-b-[6rem] lg:rounded-b-[8rem]">
+            class="relative min-h-[115vh] lg:min-h-[125vh] flex items-center pt-24 pb-20 overflow-hidden bg-slate-900 rounded-b-[2rem] sm:rounded-b-[6rem] lg:rounded-b-[8rem]">
             <!-- Background Image -->
             <div class="absolute inset-0 z-0 overflow-hidden">
                 <img src="assets/bgLanding.png" alt="Sitezet Hero Background"
                     class="w-full h-full object-cover object-[85%_30%] scale-[1.02] transform">
                 <!-- Dark overlay for center text readability -->
-                <div class="absolute inset-0 bg-slate-900/60 pointer-events-none"></div>
+                <div class="absolute inset-0 bg-slate-900/75 pointer-events-none"></div>
                 <!-- Bottom gradient for blending -->
                 <div
                     class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent pointer-events-none">
@@ -101,34 +101,29 @@
             </div>
 
             <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10 w-full flex justify-center">
-                <div class="max-w-4xl text-center flex flex-col items-center -mt-32 lg:-mt-[20vh]" data-aos="fade-up"
+                <div class="max-w-4xl text-center flex flex-col items-center -mt-16 lg:-mt-[15vh]" data-aos="fade-up"
                     data-aos-duration="1000">
                     <h1
                         class="text-5xl sm:text-6xl lg:text-[4.5rem] font-extrabold leading-[1.1] tracking-tight mb-6 text-white drop-shadow-md">
-                        Tingkatkan <span
-                            class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-300 drop-shadow-none">Bisnis
-                            Anda</span><br class="hidden lg:block" /> ke Level Berikutnya.
+                        <span data-i18n="hero_title_1" class="fade-lang">Bikin Bisnismu <br class="hidden lg:block" /></span><span data-i18n="hero_title_2" class="fade-lang"><span
+                            class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-300 drop-shadow-md">Go Digital</span> & Profesional.</span>
                     </h1>
                     <p
-                        class="text-lg lg:text-xl text-gray-200 mb-10 lg:mb-12 font-light leading-relaxed max-w-3xl drop-shadow">
-                        Website premium yang cepat dan profesional untuk meningkatkan kredibilitas serta penjualan
-                        bisnis Anda.
+                        class="text-lg lg:text-xl text-gray-200 mb-10 lg:mb-12 font-light leading-relaxed max-w-3xl drop-shadow min-h-[60px] lg:min-h-[80px]" id="typed-subtitle-container">
+                        <span id="typed-subtitle"></span>
                     </p>
-                </div>
-            </div>
-
-            <div class="absolute bottom-[35vh] lg:bottom-[45vh] left-0 right-0 w-full flex justify-center z-10 px-6"
-                data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto max-w-4xl">
-                    <a href="javascript:void(0)" onclick="openCTAForm()"
-                        class="group hover-arrow-slide btn-shine w-full sm:w-auto px-10 py-4 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-500 transition-colors duration-300 shadow-[0_10px_30px_-10px_rgba(20,184,166,0.6)] flex items-center justify-center gap-2">
-                        Konsultasi Gratis
-                        <i data-lucide="arrow-right" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#works"
-                        class="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-colors flex items-center justify-center shadow-sm">
-                        Lihat Portofolio Kami
-                    </a>
+                    
+                    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto max-w-4xl" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        <a href="javascript:void(0)" onclick="openCTAForm()"
+                            class="group hover-arrow-slide btn-shine w-full sm:w-auto px-10 py-4 bg-teal-600 text-white font-bold rounded-full hover:bg-teal-500 transition-colors duration-300 shadow-[0_10px_30px_-10px_rgba(20,184,166,0.6)] flex items-center justify-center gap-2">
+                            <span data-i18n="hero_btn_process" class="fade-lang">Konsultasi Gratis</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#works"
+                            class="w-full sm:w-auto px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium rounded-full hover:bg-white/20 transition-colors flex items-center justify-center shadow-sm">
+                            <span data-i18n="hero_btn_explore" class="fade-lang">Lihat Portofolio Kami</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -196,35 +191,49 @@
     <!-- Why Us Section -->
     <section class="py-24 bg-slate-50 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="flex flex-col md:flex-row items-start md:items-center gap-6 lg:gap-10 text-left mb-8 md:mb-10 mix-blend-multiply" data-aos="fade-up">
-                <img src="assets/logo.png" alt="Sitezet Logo" class="w-24 md:w-32 lg:w-40 object-contain shrink-0" />
-                <h3
-                    class="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 tracking-tighter leading-[1.05] max-w-4xl">
-                    Kenapa harus <span class="text-teal-600">sitezet</span></h3>
+            <style>
+                @keyframes pulseGlow {
+                    0%, 100% { filter: drop-shadow(0 0 8px rgba(13, 148, 136, 0.4)); }
+                    50% { filter: drop-shadow(0 0 25px rgba(13, 148, 136, 0.9)); }
+                }
+                .animate-pulse-glow {
+                    animation: pulseGlow 3s ease-in-out infinite;
+                    display: inline-block;
+                }
+            </style>
+            <div class="flex justify-center text-center mb-6 md:mb-8 mix-blend-multiply" data-aos="fade-up">
+                <h3 data-i18n="why_title"
+                    class="fade-lang text-6xl md:text-7xl lg:text-[6.2rem] font-black text-slate-900 tracking-normal leading-[1] w-full lg:whitespace-nowrap mx-auto">
+                    Kenapa harus <span class="text-teal-600 animate-pulse-glow">sitezet</span></h3>
             </div>
 
             <!-- Expanding Interactive Flex Accordion -->
-            <div class="flex flex-col lg:flex-row w-full gap-4 lg:gap-6 h-[450px] lg:h-[400px]">
+            <div class="flex flex-col lg:flex-row w-full gap-4 lg:gap-6 lg:h-[400px]">
                 
                 <!-- Card 1: Desain Custom -->
-                <div class="group relative flex-1 hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-teal-900/5">
+                <div onclick="if(window.innerWidth < 1024) { const isActive = this.classList.contains('is-expanded'); this.parentElement.querySelectorAll('.group').forEach(c => c.classList.remove('is-expanded')); if(!isActive) this.classList.add('is-expanded'); }" class="group relative h-[110px] [&.is-expanded]:h-[240px] lg:h-auto lg:flex-1 outline-none lg:hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl [&.is-expanded]:shadow-xl hover:shadow-teal-900/5 [&.is-expanded]:shadow-teal-900/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-white to-slate-50 z-0"></div>
                     <!-- Blueprint Pattern -->
-                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
+                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] group-[.is-expanded]:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
                     <!-- Massive Icon Watermark -->
 
-                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0 animate-pulse pointer-events-none"></div>
+                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-[.is-expanded]:opacity-100 transition-opacity duration-700 z-0 animate-pulse pointer-events-none"></div>
                     
-                    <div class="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end z-10">
-                        <div class="flex flex-col gap-5 lg:gap-6">
-                            <div class="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-500 group-hover:shadow-xl group-hover:shadow-teal-500/30 transition-all duration-500">
+                    <div class="absolute inset-0 p-5 lg:p-8 flex flex-col justify-end z-10">
+                        <div class="flex flex-row lg:flex-col items-center lg:items-start justify-between w-full lg:w-auto gap-4">
+                            <div class="flex flex-row lg:flex-col items-center lg:items-start gap-4 lg:gap-6">
+                            <div class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-[.is-expanded]:scale-110 group-hover:bg-teal-600 group-[.is-expanded]:bg-teal-600 group-hover:text-white group-[.is-expanded]:text-white group-hover:border-teal-500 group-[.is-expanded]:border-teal-500 group-hover:shadow-xl group-[.is-expanded]:shadow-xl group-hover:shadow-teal-500/30 group-[.is-expanded]:shadow-teal-500/30 transition-all duration-500">
                                 <i data-lucide="pen-tool" class="w-6 h-6 lg:w-8 lg:h-8"></i>
                             </div>
-                            <h4 class="text-2xl lg:text-3xl font-bold text-slate-400 group-hover:text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 lg:group-hover:scale-125">Anti<br>Template<br>Club</h4>
+                            <h4 data-i18n="why_1_t" class="fade-lang text-xl lg:text-3xl font-bold text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 group-[.is-expanded]:scale-110 lg:group-hover:scale-125">Anti <br class="hidden lg:block">Template <br class="hidden lg:block">Club</h4>
                         </div>
-                        <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4">
+                        <div class="block lg:hidden shrink-0 mt-2 lg:mt-0">
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-slate-400 transition-transform duration-500 group-[.is-expanded]:rotate-180"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-[.is-expanded]:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4 group-[.is-expanded]:mt-4">
                             <div class="overflow-hidden">
-                                <p class="text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
+                                <p data-i18n="why_1_d" class="fade-lang text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-[.is-expanded]:opacity-100 group-hover:translate-y-0 group-[.is-expanded]:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
                                     Desain bukan template dan tidak pasaran, kami merancangnya khusus menyesuaikan dengan identitas brand Anda.
                                 </p>
                             </div>
@@ -233,22 +242,27 @@
                 </div>
 
                 <!-- Card 2: Pengerjaan Cepat -->
-                <div class="group relative flex-1 hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-teal-900/5">
+                <div onclick="if(window.innerWidth < 1024) { const isActive = this.classList.contains('is-expanded'); this.parentElement.querySelectorAll('.group').forEach(c => c.classList.remove('is-expanded')); if(!isActive) this.classList.add('is-expanded'); }" class="group relative h-[110px] [&.is-expanded]:h-[240px] lg:h-auto lg:flex-1 outline-none lg:hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl [&.is-expanded]:shadow-xl hover:shadow-teal-900/5 [&.is-expanded]:shadow-teal-900/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-white to-slate-50 z-0"></div>
-                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
+                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] group-[.is-expanded]:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
 
-                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0 animate-float pointer-events-none"></div>
+                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-[.is-expanded]:opacity-100 transition-opacity duration-700 z-0 animate-float pointer-events-none"></div>
                     
-                    <div class="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end z-10">
-                        <div class="flex flex-col gap-5 lg:gap-6">
-                            <div class="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-500 group-hover:shadow-xl group-hover:shadow-teal-500/30 transition-all duration-500">
+                    <div class="absolute inset-0 p-5 lg:p-8 flex flex-col justify-end z-10">
+                        <div class="flex flex-row lg:flex-col items-center lg:items-start justify-between w-full lg:w-auto gap-4">
+                            <div class="flex flex-row lg:flex-col items-center lg:items-start gap-4 lg:gap-6">
+                            <div class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-[.is-expanded]:scale-110 group-hover:bg-teal-600 group-[.is-expanded]:bg-teal-600 group-hover:text-white group-[.is-expanded]:text-white group-hover:border-teal-500 group-[.is-expanded]:border-teal-500 group-hover:shadow-xl group-[.is-expanded]:shadow-xl group-hover:shadow-teal-500/30 group-[.is-expanded]:shadow-teal-500/30 transition-all duration-500">
                                 <i data-lucide="rocket" class="w-6 h-6 lg:w-8 lg:h-8"></i>
                             </div>
-                            <h4 class="text-2xl lg:text-3xl font-bold text-slate-400 group-hover:text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 lg:group-hover:scale-125">Proses<br>Pengerjaan<br>Sat-Set</h4>
+                            <h4 data-i18n="why_2_t" class="fade-lang text-xl lg:text-3xl font-bold text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 group-[.is-expanded]:scale-110 lg:group-hover:scale-125">Proses <br class="hidden lg:block">Pengerjaan <br class="hidden lg:block">Sat-Set</h4>
                         </div>
-                        <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4">
+                        <div class="block lg:hidden shrink-0 mt-2 lg:mt-0">
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-slate-400 transition-transform duration-500 group-[.is-expanded]:rotate-180"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-[.is-expanded]:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4 group-[.is-expanded]:mt-4">
                             <div class="overflow-hidden">
-                                <p class="text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
+                                <p data-i18n="why_2_d" class="fade-lang text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-[.is-expanded]:opacity-100 group-hover:translate-y-0 group-[.is-expanded]:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
                                     Pengerjaan sangat cepat, website Anda akan siap untuk diluncurkan hanya dalam waktu 1-2 minggu saja.
                                 </p>
                             </div>
@@ -257,22 +271,27 @@
                 </div>
 
                 <!-- Card 3: Dukungan Teknis -->
-                <div class="group relative flex-1 hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-teal-900/5">
+                <div onclick="if(window.innerWidth < 1024) { const isActive = this.classList.contains('is-expanded'); this.parentElement.querySelectorAll('.group').forEach(c => c.classList.remove('is-expanded')); if(!isActive) this.classList.add('is-expanded'); }" class="group relative h-[110px] [&.is-expanded]:h-[240px] lg:h-auto lg:flex-1 outline-none lg:hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl [&.is-expanded]:shadow-xl hover:shadow-teal-900/5 [&.is-expanded]:shadow-teal-900/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-white to-slate-50 z-0"></div>
-                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
+                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] group-[.is-expanded]:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
 
-                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0 animate-pulse pointer-events-none"></div>
+                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-[.is-expanded]:opacity-100 transition-opacity duration-700 z-0 animate-pulse pointer-events-none"></div>
                     
-                    <div class="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end z-10">
-                        <div class="flex flex-col gap-5 lg:gap-6">
-                            <div class="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-500 group-hover:shadow-xl group-hover:shadow-teal-500/30 transition-all duration-500">
+                    <div class="absolute inset-0 p-5 lg:p-8 flex flex-col justify-end z-10">
+                        <div class="flex flex-row lg:flex-col items-center lg:items-start justify-between w-full lg:w-auto gap-4">
+                            <div class="flex flex-row lg:flex-col items-center lg:items-start gap-4 lg:gap-6">
+                            <div class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-[.is-expanded]:scale-110 group-hover:bg-teal-600 group-[.is-expanded]:bg-teal-600 group-hover:text-white group-[.is-expanded]:text-white group-hover:border-teal-500 group-[.is-expanded]:border-teal-500 group-hover:shadow-xl group-[.is-expanded]:shadow-xl group-hover:shadow-teal-500/30 group-[.is-expanded]:shadow-teal-500/30 transition-all duration-500">
                                 <i data-lucide="life-buoy" class="w-6 h-6 lg:w-8 lg:h-8"></i>
                             </div>
-                            <h4 class="text-2xl lg:text-3xl font-bold text-slate-400 group-hover:text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 lg:group-hover:scale-125">Dukungan<br>Bebas<br>Drama</h4>
+                            <h4 data-i18n="why_3_t" class="fade-lang text-xl lg:text-3xl font-bold text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 group-[.is-expanded]:scale-110 lg:group-hover:scale-125">Dukungan <br class="hidden lg:block">Bebas <br class="hidden lg:block">Drama</h4>
                         </div>
-                        <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4">
+                        <div class="block lg:hidden shrink-0 mt-2 lg:mt-0">
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-slate-400 transition-transform duration-500 group-[.is-expanded]:rotate-180"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-[.is-expanded]:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4 group-[.is-expanded]:mt-4">
                             <div class="overflow-hidden">
-                                <p class="text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
+                                <p data-i18n="why_3_d" class="fade-lang text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-[.is-expanded]:opacity-100 group-hover:translate-y-0 group-[.is-expanded]:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
                                     Tim dukungan teknis kami selalu siap membantu jika Anda mengalami kendala operasional kapan saja.
                                 </p>
                             </div>
@@ -281,22 +300,27 @@
                 </div>
 
                 <!-- Card 4: Harga Terjangkau -->
-                <div class="group relative flex-1 hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl hover:shadow-teal-900/5">
+                <div onclick="if(window.innerWidth < 1024) { const isActive = this.classList.contains('is-expanded'); this.parentElement.querySelectorAll('.group').forEach(c => c.classList.remove('is-expanded')); if(!isActive) this.classList.add('is-expanded'); }" class="group relative h-[110px] [&.is-expanded]:h-[240px] lg:h-auto lg:flex-1 outline-none lg:hover:flex-[4] transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] rounded-[2.5rem] overflow-hidden cursor-pointer bg-white border border-slate-200 shadow-sm hover:shadow-xl [&.is-expanded]:shadow-xl hover:shadow-teal-900/5 [&.is-expanded]:shadow-teal-900/5">
                     <div class="absolute inset-0 bg-gradient-to-br from-white to-slate-50 z-0"></div>
-                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
+                    <div class="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.08] group-[.is-expanded]:opacity-[0.08] transition-opacity duration-500 pointer-events-none z-0" style="background-image: radial-gradient(circle at 2px 2px, #0f172a 1px, transparent 0); background-size: 24px 24px;"></div>
 
-                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-0 animate-float-delayed pointer-events-none"></div>
+                    <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-teal-500/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 group-[.is-expanded]:opacity-100 transition-opacity duration-700 z-0 animate-float-delayed pointer-events-none"></div>
                     
-                    <div class="absolute inset-0 p-6 lg:p-8 flex flex-col justify-end z-10">
-                        <div class="flex flex-col gap-5 lg:gap-6">
-                            <div class="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-hover:bg-teal-600 group-hover:text-white group-hover:border-teal-500 group-hover:shadow-xl group-hover:shadow-teal-500/30 transition-all duration-500">
+                    <div class="absolute inset-0 p-5 lg:p-8 flex flex-col justify-end z-10">
+                        <div class="flex flex-row lg:flex-col items-center lg:items-start justify-between w-full lg:w-auto gap-4">
+                            <div class="flex flex-row lg:flex-col items-center lg:items-start gap-4 lg:gap-6">
+                            <div class="w-12 h-12 lg:w-16 lg:h-16 rounded-full bg-white border border-slate-200 flex items-center justify-center text-teal-600 shrink-0 group-hover:scale-110 group-[.is-expanded]:scale-110 group-hover:bg-teal-600 group-[.is-expanded]:bg-teal-600 group-hover:text-white group-[.is-expanded]:text-white group-hover:border-teal-500 group-[.is-expanded]:border-teal-500 group-hover:shadow-xl group-[.is-expanded]:shadow-xl group-hover:shadow-teal-500/30 group-[.is-expanded]:shadow-teal-500/30 transition-all duration-500">
                                 <i data-lucide="wallet" class="w-6 h-6 lg:w-8 lg:h-8"></i>
                             </div>
-                            <h4 class="text-2xl lg:text-3xl font-bold text-slate-400 group-hover:text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 lg:group-hover:scale-125">Nggak<br>Bikin<br>Boncos</h4>
+                            <h4 data-i18n="why_4_t" class="fade-lang text-xl lg:text-3xl font-bold text-slate-900 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] leading-tight origin-left group-hover:scale-110 group-[.is-expanded]:scale-110 lg:group-hover:scale-125">Nggak <br class="hidden lg:block">Bikin <br class="hidden lg:block">Boncos</h4>
                         </div>
-                        <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4">
+                        <div class="block lg:hidden shrink-0 mt-2 lg:mt-0">
+                            <i data-lucide="chevron-down" class="w-6 h-6 text-slate-400 transition-transform duration-500 group-[.is-expanded]:rotate-180"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] group-[.is-expanded]:grid-rows-[1fr] transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] mt-0 group-hover:mt-4 group-[.is-expanded]:mt-4">
                             <div class="overflow-hidden">
-                                <p class="text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
+                                <p data-i18n="why_4_d" class="fade-lang text-slate-500 text-base lg:text-lg min-w-[260px] lg:min-w-[450px] opacity-0 translate-y-4 group-hover:opacity-100 group-[.is-expanded]:opacity-100 group-hover:translate-y-0 group-[.is-expanded]:translate-y-0 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)] delay-200 leading-relaxed mt-2 lg:mt-4">
                                     Harga terjangkau karena misi kami adalah membantu para pelaku UMKM untuk segera go digital tanpa beban.
                                 </p>
                             </div>
@@ -313,12 +337,9 @@
         <div class="max-w-7xl mx-auto px-6 lg:px-12">
             <div class="mb-20 text-left" data-aos="fade-up">
                 <div>
-                    <h2 data-i18n="srv_badge"
-                        class="fade-lang text-teal-600 font-bold tracking-widest uppercase text-sm mb-4">Layanan Kami
-                    </h2>
                     <h3 data-i18n="srv_title"
                         class="fade-lang text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 tracking-tighter leading-[1.05] max-w-5xl">
-                        Solusi Digital<br>Untuk Bisnis Anda.</h3>
+                        Solusi Digital<br>Untuk <span class="text-teal-600">Bisnis Anda.</span></h3>
                 </div>
             </div>
 
@@ -770,855 +791,201 @@
     </section>
 
     <!-- Our Process Section -->
-    <div class="w-full relative overflow-hidden bg-slate-50 py-12 lg:py-24 px-4 lg:px-8">
+    <div class="w-full relative overflow-hidden bg-slate-50 py-12 lg:py-32 px-2 lg:px-4">
         
-        <!-- Colorful glowing orbs behind the glass (moved outside the section) -->
-        <div class="absolute top-[10%] left-[5%] w-[500px] h-[500px] bg-teal-400/40 rounded-full blur-[80px] pointer-events-none z-0 animate-float-slow"></div>
-        <div class="absolute bottom-[10%] right-[5%] w-[600px] h-[600px] bg-emerald-400/30 rounded-full blur-[80px] pointer-events-none z-0 animate-float-slow" style="animation-delay: 2s;"></div>
-
         <!-- The Glass Card -->
         <section id="process"
-            class="max-w-7xl mx-auto relative overflow-hidden rounded-[2rem] lg:rounded-[3rem] shadow-[inset_0_1px_3px_rgba(255,255,255,0.9),_0_20px_40px_rgba(0,0,0,0.08)] py-20 lg:py-28 px-6 lg:px-16 group/glass border border-white/80 border-b-white/40 border-r-white/40 bg-white/40 backdrop-blur-2xl [transform:translateZ(0)] z-10">
+            class="w-full mx-auto relative overflow-hidden rounded-3xl lg:rounded-[3rem] shadow-[0_20px_40px_rgba(0,0,0,0.1)] pb-20 lg:pb-28 pt-0 px-6 lg:px-16 group/glass border border-slate-800 bg-slate-900 [transform:translateZ(0)] z-10">
             
-            <div class="relative z-10">
-                <div class="text-center md:text-left mb-20 max-w-5xl" data-aos="fade-up">
-                    <h2 class="inline-block px-4 py-1.5 rounded-full bg-white/60 backdrop-blur-md border border-teal-100 text-teal-600 font-bold tracking-widest uppercase text-xs mb-6 shadow-sm">
-                        BONGKAR RAHASIA</h2>
-                    <h3 class="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 tracking-tighter leading-[1.05]">
-                        Langkah Menuju<br>Dominasi Digital.</h3>
-                </div>
+            <!-- Colorful glowing orbs behind the glass (moved inside the section) -->
+            <div class="absolute -top-[10%] -left-[10%] w-[500px] h-[500px] rounded-full pointer-events-none z-0 animate-float-slow" style="background: radial-gradient(circle, rgba(20, 184, 166, 0.2) 0%, transparent 70%);"></div>
+            <div class="absolute -bottom-[10%] -right-[10%] w-[600px] h-[600px] rounded-full pointer-events-none z-0 animate-float-slow" style="background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%); animation-delay: 2s;"></div>
+
+            <!-- Big Typographic Header -->
+            <div class="relative w-[calc(100%+3rem)] lg:w-[calc(100%+8rem)] -ml-6 lg:-ml-16 mb-20 lg:mb-24 pointer-events-none select-none z-0" data-aos="fade-up">
+                <h3 data-i18n="process_big_title" class="fade-lang text-[22vw] sm:text-[5.5rem] md:text-[8rem] lg:text-[11rem] xl:text-[13rem] font-black text-slate-50/20 tracking-tighter leading-[0.85] -mt-2 md:-mt-4 lg:-mt-8 whitespace-nowrap">
+                    Workflow<br>Sistem.</h3>
+            </div>
+
+            <div class="max-w-7xl mx-auto relative z-10">
 
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 group/board">
                     <!-- Step 1 -->
                     <div class="relative text-center group/step transition-all duration-500 group-hover/board:opacity-50 hover:!opacity-100 hover:scale-105"
                         data-aos="fade-up" data-aos-delay="100">
                         <div
-                            class="w-24 h-24 mx-auto bg-white backdrop-blur-md border border-teal-100 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-teal-900/5 transition-all duration-500 relative z-10 hover:bg-teal-50 hover:border-teal-200 hover:shadow-[0_0_30px_rgba(45,212,191,0.2)]">
-                            <i data-lucide="search" class="w-10 h-10 text-teal-500 animate-float-medium"></i>
+                            class="w-24 h-24 mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-black/20 transition-all duration-500 relative z-10 hover:bg-teal-500/20 hover:border-teal-400/50 hover:shadow-[0_0_30px_rgba(45,212,191,0.2)] animate-icon-sequence" style="animation-delay: 0s;">
+                            <i data-lucide="message-square" class="w-10 h-10 text-teal-400 animate-float-medium"></i>
                         </div>
-                        <div
-                            class="hidden md:block absolute top-12 left-[60%] w-full h-[2px] bg-gradient-to-r from-teal-500/0 via-teal-300 to-teal-500/0 animate-flow-line opacity-60">
+                        <div class="hidden md:block absolute top-12 left-[60%] w-full h-[2px] bg-teal-500/20 overflow-hidden" data-aos="fade" data-aos-once="true">
+                            <div class="w-full h-full bg-gradient-to-r from-transparent via-teal-400 to-transparent animate-flow-sequence opacity-100" style="animation-delay: 0s;"></div>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-2 group-hover/step:text-teal-600 transition-colors">
-                            Konsultasi Profit</h4>
-                        <p class="text-slate-500 font-light text-sm px-4 group-hover/step:text-slate-700 transition-colors">
-                            Kita bedah masalah bisnis Anda dan temukan formula digital paling menguntungkan.</p>
+                        <h4 data-i18n="proc_1_t" class="fade-lang text-xl font-bold text-white mb-2 group-hover/step:text-teal-400 transition-colors">
+                            Kebutuhan & Konsultasi</h4>
+                        <p data-i18n="proc_1_d" class="fade-lang text-slate-400 font-light text-sm px-4 group-hover/step:text-slate-300 transition-colors">
+                            Menginformasikan kebutuhan sistem (requirements), dilanjutkan dengan sesi konsultasi mendalam dan review awal.</p>
                     </div>
                     <!-- Step 2 -->
                     <div class="relative text-center group/step transition-all duration-500 group-hover/board:opacity-50 hover:!opacity-100 hover:scale-105"
                         data-aos="fade-up" data-aos-delay="200">
                         <div
-                            class="w-24 h-24 mx-auto bg-white backdrop-blur-md border border-teal-100 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-teal-900/5 transition-all duration-500 relative z-10 hover:bg-teal-50 hover:border-teal-200 hover:shadow-[0_0_30px_rgba(45,212,191,0.2)]">
-                            <i data-lucide="pen-tool"
-                                class="w-10 h-10 text-teal-500 animate-float-slow"></i>
+                            class="w-24 h-24 mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-black/20 transition-all duration-500 relative z-10 hover:bg-teal-500/20 hover:border-teal-400/50 hover:shadow-[0_0_30px_rgba(45,212,191,0.2)] animate-icon-sequence" style="animation-delay: 2s;">
+                            <i data-lucide="file-text"
+                                class="w-10 h-10 text-teal-400 animate-float-slow"></i>
                         </div>
-                        <div
-                            class="hidden md:block absolute top-12 left-[60%] w-full h-[2px] bg-gradient-to-r from-teal-500/0 via-teal-300 to-teal-500/0 animate-flow-line opacity-60">
+                        <div class="hidden md:block absolute top-12 left-[60%] w-full h-[2px] bg-teal-500/20 overflow-hidden" data-aos="fade" data-aos-once="true">
+                            <div class="w-full h-full bg-gradient-to-r from-transparent via-teal-400 to-transparent animate-flow-sequence opacity-100" style="animation-delay: 2s;"></div>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-2 group-hover/step:text-teal-600 transition-colors">
-                            Pengumpulan Amunisi</h4>
-                        <p class="text-slate-500 font-light text-sm px-4 group-hover/step:text-slate-700 transition-colors">
-                            Siapkan logo dan materi, serahkan pada tim kami untuk diracik menjadi aset mematikan.</p>
+                        <h4 data-i18n="proc_2_t" class="fade-lang text-xl font-bold text-white mb-2 group-hover/step:text-teal-400 transition-colors">
+                            Dokumen & DP 50%</h4>
+                        <p data-i18n="proc_2_d" class="fade-lang text-slate-400 font-light text-sm px-4 group-hover/step:text-slate-300 transition-colors">
+                            Kami mengirimkan dokumen fitur, biaya, dan timeline. Jika deal, pengerjaan dimulai setelah pembayaran DP 50%.</p>
                     </div>
                     <!-- Step 3 -->
                     <div class="relative text-center group/step transition-all duration-500 group-hover/board:opacity-50 hover:!opacity-100 hover:scale-105"
                         data-aos="fade-up" data-aos-delay="300">
                         <div
-                            class="w-24 h-24 mx-auto bg-white backdrop-blur-md border border-teal-100 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-teal-900/5 transition-all duration-500 relative z-10 hover:bg-teal-50 hover:border-teal-200 hover:shadow-[0_0_30px_rgba(45,212,191,0.2)]">
-                            <i data-lucide="code"
-                                class="w-10 h-10 text-teal-500 animate-float-fast"></i>
+                            class="w-24 h-24 mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-black/20 transition-all duration-500 relative z-10 hover:bg-teal-500/20 hover:border-teal-400/50 hover:shadow-[0_0_30px_rgba(45,212,191,0.2)] animate-icon-sequence" style="animation-delay: 4s;">
+                            <i data-lucide="rocket"
+                                class="w-10 h-10 text-teal-400 animate-float-fast"></i>
                         </div>
-                        <div
-                            class="hidden md:block absolute top-12 left-[60%] w-full h-[2px] bg-gradient-to-r from-teal-500/0 via-teal-300 to-teal-500/0 animate-flow-line opacity-60">
+                        <div class="hidden md:block absolute top-12 left-[60%] w-full h-[2px] bg-teal-500/20 overflow-hidden" data-aos="fade" data-aos-once="true">
+                            <div class="w-full h-full bg-gradient-to-r from-transparent via-teal-400 to-transparent animate-flow-sequence opacity-100" style="animation-delay: 4s;"></div>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-2 group-hover/step:text-teal-600 transition-colors">
-                            Eksekusi & Coding</h4>
-                        <p class="text-slate-500 font-light text-sm px-4 group-hover/step:text-slate-700 transition-colors">
-                            Sihir dimulai. Kami bangun website Anda dengan desain mahal dan performa ekstrem.</p>
+                        <h4 data-i18n="proc_3_t" class="fade-lang text-xl font-bold text-white mb-2 group-hover/step:text-teal-400 transition-colors">
+                            Pelunasan & Deploy</h4>
+                        <p data-i18n="proc_3_d" class="fade-lang text-slate-400 font-light text-sm px-4 group-hover/step:text-slate-300 transition-colors">
+                            Setelah 100% selesai (done), dilakukan pelunasan, pemilihan nama domain, dan siap deploy ke publik.</p>
                     </div>
                     <!-- Step 4 -->
                     <div class="relative text-center group/step transition-all duration-500 group-hover/board:opacity-50 hover:!opacity-100 hover:scale-105"
                         data-aos="fade-up" data-aos-delay="400">
                         <div
-                            class="w-24 h-24 mx-auto bg-gradient-to-br from-teal-500 to-emerald-600 border border-teal-400/50 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-teal-500/40 transition-all duration-500 relative z-10 hover:shadow-[0_0_40px_rgba(16,185,129,0.4)] hover:scale-110">
-                            <i data-lucide="rocket" class="w-10 h-10 text-white animate-bounce"></i>
+                            class="w-24 h-24 mx-auto bg-gradient-to-br from-teal-500 to-emerald-600 border border-teal-400/50 rounded-[2rem] flex items-center justify-center mb-6 shadow-xl shadow-teal-500/40 transition-all duration-500 relative z-10 hover:shadow-[0_0_40px_rgba(16,185,129,0.4)] hover:scale-110 animate-icon-sequence-final" style="animation-delay: 6s;">
+                            <i data-lucide="shield-check" class="w-10 h-10 text-white animate-bounce"></i>
                         </div>
-                        <h4 class="text-xl font-bold text-slate-800 mb-2 group-hover/step:text-teal-600 transition-colors">
-                            Review & Meroket</h4>
-                        <p class="text-slate-500 font-light text-sm px-4 group-hover/step:text-slate-700 transition-colors">
-                            Begitu sempurna, website Anda siap diluncurkan untuk memikat ribuan leads baru!</p>
+                        <h4 data-i18n="proc_4_t" class="fade-lang text-xl font-bold text-white mb-2 group-hover/step:text-teal-400 transition-colors">
+                            Revisi & Maintenance</h4>
+                        <p data-i18n="proc_4_d" class="fade-lang text-slate-400 font-light text-sm px-4 group-hover/step:text-slate-300 transition-colors">
+                            Bebas revisi minor wajar (bukan fitur/sistem). Revisi besar ada biaya tambahan. Maintenance sesuai paket hosting.</p>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
     </div>
 
-    <!-- Selected Works Teaser -->
-    <section id="works" class="py-24 bg-slate-50 overflow-hidden relative border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6" data-aos="fade-right">
-                <div class="max-w-5xl">
-                    <h2 data-i18n="works_badge"
-                        class="fade-lang text-teal-600 font-bold tracking-widest uppercase text-sm mb-4">Selected Works
-                    </h2>
-                    <h3 data-i18n="works_title"
-                        class="fade-lang text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 tracking-tighter leading-[1.05]">
-                        Featured Project.</h3>
-                </div>
-                <a href="#"
-                    class="group text-gray-600 font-medium border-b border-gray-300 pb-1 hover:text-teal-600 hover:border-teal-600 transition-colors flex items-center gap-2">
-                    <span data-i18n="works_view_all" class="fade-lang">View All Gallery</span> <i
-                        data-lucide="arrow-right" class="w-4 h-4 group-hover:animate-bounce-x"></i>
-                </a>
-            </div>
 
-            <!-- Decorative Glow -->
-            <div
-                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-teal-500/10 rounded-full blur-[120px] pointer-events-none z-0">
-            </div>
-
-            <!-- Overlapping Card Layout -->
-            <div class="relative rounded-[2.5rem] p-8 lg:p-16 border border-white/60 bg-white/70 backdrop-blur-xl shadow-[0_20px_60px_-15px_rgba(20,184,166,0.15)] flex flex-col lg:flex-row items-center gap-12 lg:gap-0 group hover:bg-white/90 hover:shadow-[0_30px_70px_-15px_rgba(20,184,166,0.25)] transition-all duration-700"
-                data-aos="fade-up" data-aos-duration="1000">
-
-                <div class="w-full lg:w-1/2 lg:pr-12 z-10 relative">
-                    <!-- Floating Badge -->
-                    <div
-                        class="absolute -top-10 -left-6 bg-gradient-to-r from-teal-500 to-emerald-400 text-white text-[10px] font-bold px-4 py-1.5 rounded-full shadow-lg shadow-teal-500/30 animate-bounce-x hidden md:block">
-                        FEATURED</div>
-
-                    <h4 data-i18n="works_p1_title" class="fade-lang text-3xl lg:text-4xl font-bold mb-4 text-slate-900">
-                        Enterprise Hub Platform</h4>
-                    <p data-i18n="works_p1_desc"
-                        class="fade-lang text-gray-500 font-light leading-relaxed mb-8 text-lg">
-                        A comprehensive management portal streamlining daily operations, user roles, and data analytics
-                        into one intuitive interface. Built for scale.
-                    </p>
-
-                    <div class="flex flex-wrap gap-3">
-                        <span
-                            class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-xs font-bold text-gray-600">Laravel</span>
-                        <span
-                            class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-xs font-bold text-gray-600">Livewire</span>
-                        <span
-                            class="px-4 py-2 rounded-full bg-slate-100 border border-slate-200 text-xs font-bold text-gray-600">Tailwind
-                            CSS</span>
-                        <span
-                            class="px-4 py-2 rounded-full bg-teal-50 border border-teal-100 text-xs font-bold text-teal-700">Filament
-                            PHP</span>
-                    </div>
-                </div>
-
-                <div class="works-mockup-wrap w-full lg:w-1/2 relative h-[350px] sm:h-[450px] lg:h-[500px]"
-                    data-aos="zoom-in" data-aos-delay="200">
-                    <!-- 1. Sleek Tablet/Laptop Mockup (Filament Admin Dashboard) -->
-                    <div
-                        class="works-mockup-laptop absolute right-0 top-0 w-[85%] h-[80%] bg-slate-950 rounded-[1.8rem] border-[8px] border-slate-950 shadow-[0_25px_60px_-15px_rgba(15,23,42,0.4)] overflow-hidden flex flex-col group/mac z-10 transition-all duration-500 group-hover:-rotate-1 group-hover:scale-105">
-                        <div class="w-full flex-1 relative bg-[#f9fafb]">
-                            <!-- Filament PHP Admin UI -->
-                            <div
-                                class="w-full h-full text-[6.5px] leading-tight font-sans flex select-none overflow-hidden text-slate-600">
-                                <!-- Sidebar -->
-                                <div class="w-[28%] bg-slate-900 text-slate-300 p-2 flex flex-col h-full shrink-0">
-                                    <!-- Brand Logo -->
-                                    <div
-                                        class="flex items-center gap-1.5 mb-3 text-white font-bold text-[8.5px] tracking-tight">
-                                        <div
-                                            class="w-2.5 h-2.5 bg-amber-500 rounded flex items-center justify-center text-[6px] text-slate-900 font-extrabold">
-                                            F</div>
-                                        <span>Enterprise Hub</span>
-                                    </div>
-                                    <!-- Search input -->
-                                    <div class="mb-3">
-                                        <div
-                                            class="bg-slate-800 rounded px-1.5 py-0.5 text-[5px] text-slate-500 border border-slate-700/50 flex items-center gap-1">
-                                            <svg class="w-1.5 h-1.5" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <circle cx="11" cy="11" r="8"></circle>
-                                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                            </svg>
-                                            <span>Search...</span>
-                                        </div>
-                                    </div>
-                                    <!-- Menu -->
-                                    <div class="space-y-1">
-                                        <div
-                                            class="flex items-center gap-1.5 py-1 px-1 bg-amber-500/10 text-amber-500 font-medium rounded">
-                                            <svg class="w-2 h-2 text-amber-500 shrink-0" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                stroke-linejoin="round">
-                                                <rect x="3" y="3" width="7" height="9"></rect>
-                                                <rect x="14" y="3" width="7" height="5"></rect>
-                                                <rect x="14" y="12" width="7" height="9"></rect>
-                                                <rect x="3" y="16" width="7" height="5"></rect>
-                                            </svg>
-                                            <span>Dashboard</span>
-                                        </div>
-                                        <div
-                                            class="flex items-center gap-1.5 py-1 px-1 hover:text-white transition-colors cursor-pointer">
-                                            <svg class="w-2 h-2 shrink-0" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                                <circle cx="9" cy="7" r="4"></circle>
-                                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                            </svg>
-                                            <span>Users</span>
-                                        </div>
-                                        <div
-                                            class="flex items-center gap-1.5 py-1 px-1 hover:text-white transition-colors cursor-pointer">
-                                            <svg class="w-2 h-2 shrink-0" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                            </svg>
-                                            <span>Roles</span>
-                                        </div>
-                                        <div
-                                            class="flex items-center gap-1.5 py-1 px-1 hover:text-white transition-colors cursor-pointer">
-                                            <svg class="w-2 h-2 shrink-0" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                                                <line x1="1" y1="10" x2="23" y2="10"></line>
-                                            </svg>
-                                            <span>Transactions</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Main Content Area -->
-                                <div class="flex-1 flex flex-col h-full bg-[#f3f4f6] overflow-hidden">
-                                    <!-- Top Bar -->
-                                    <div
-                                        class="h-7 bg-white border-b border-slate-100 flex items-center justify-between px-3 shrink-0 shadow-sm z-10">
-                                        <div class="text-[5px] text-slate-400 font-light flex items-center gap-1">
-                                            <span>Admin</span>
-                                            <span>/</span>
-                                            <span class="text-slate-600 font-medium">Dashboard</span>
-                                        </div>
-                                        <div class="flex items-center gap-1.5">
-                                            <!-- Notification -->
-                                            <svg class="w-2 h-2 text-slate-400" viewBox="0 0 24 24" fill="none"
-                                                stroke="currentColor" stroke-width="2">
-                                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
-                                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
-                                            </svg>
-                                            <!-- Avatar -->
-                                            <div
-                                                class="w-4 h-4 rounded-full bg-amber-500 text-slate-900 font-bold flex items-center justify-center text-[5px] border border-amber-400">
-                                                JD</div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Content -->
-                                    <div class="flex-1 p-2 space-y-2 overflow-y-auto">
-                                        <!-- Title -->
-                                        <h2 class="text-slate-800 font-extrabold text-[9px] tracking-tight">Dashboard
-                                            Overview</h2>
-
-                                        <!-- Widgets Grid -->
-                                        <div class="grid grid-cols-3 gap-1.5">
-                                            <div class="bg-white p-1.5 rounded-md border border-slate-100 shadow-sm">
-                                                <div
-                                                    class="text-[4px] text-slate-400 uppercase tracking-wider font-bold">
-                                                    New Signups</div>
-                                                <div class="text-[7.5px] font-extrabold mt-0.5 text-slate-800">1,420
-                                                </div>
-                                                <div
-                                                    class="text-[4px] text-green-500 font-bold mt-0.5 flex items-center gap-0.5">
-                                                    <span>▲ 12%</span> <span class="text-slate-400 font-normal">vs last
-                                                        week</span>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white p-1.5 rounded-md border border-slate-100 shadow-sm">
-                                                <div
-                                                    class="text-[4px] text-slate-400 uppercase tracking-wider font-bold">
-                                                    Active Users</div>
-                                                <div class="text-[7.5px] font-extrabold mt-0.5 text-slate-800">12.3k
-                                                </div>
-                                                <div
-                                                    class="text-[4px] text-green-500 font-bold mt-0.5 flex items-center gap-0.5">
-                                                    <span>▲ 8%</span> <span class="text-slate-400 font-normal">vs last
-                                                        week</span>
-                                                </div>
-                                            </div>
-                                            <div class="bg-white p-1.5 rounded-md border border-slate-100 shadow-sm">
-                                                <div
-                                                    class="text-[4px] text-slate-400 uppercase tracking-wider font-bold">
-                                                    Monthly Revenue</div>
-                                                <div class="text-[7.5px] font-extrabold mt-0.5 text-slate-800">$48,200
-                                                </div>
-                                                <div
-                                                    class="text-[4px] text-red-500 font-bold mt-0.5 flex items-center gap-0.5">
-                                                    <span>▼ 3%</span> <span class="text-slate-400 font-normal">vs last
-                                                        week</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- Filament Table Card -->
-                                        <div
-                                            class="bg-white rounded-md border border-slate-100 shadow-sm overflow-hidden flex flex-col">
-                                            <div
-                                                class="px-2 py-1.5 bg-white border-b border-slate-50 flex items-center justify-between">
-                                                <span class="font-extrabold text-[7.5px] text-slate-800">Recent
-                                                    Transactions</span>
-                                                <div class="flex items-center gap-1">
-                                                    <button
-                                                        class="bg-slate-50 border border-slate-200 rounded px-1.5 py-0.5 font-bold text-slate-600 hover:bg-slate-100 text-[4.5px]">Filter</button>
-                                                </div>
-                                            </div>
-                                            <div class="overflow-x-auto">
-                                                <table class="w-full text-left text-[5px]">
-                                                    <thead
-                                                        class="bg-slate-50 text-slate-500 font-bold uppercase tracking-wider border-b border-slate-100">
-                                                        <tr>
-                                                            <th class="p-1">User</th>
-                                                            <th class="p-1">Amount</th>
-                                                            <th class="p-1">Status</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody class="divide-y divide-slate-50 text-slate-700">
-                                                        <tr class="hover:bg-slate-50/50">
-                                                            <td class="p-1 font-bold">Alex Rivera</td>
-                                                            <td class="p-1">$120.00</td>
-                                                            <td class="p-1"><span
-                                                                    class="px-1 py-0.2 rounded-full bg-green-500/10 text-green-600 font-bold text-[4.5px]">Paid</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="hover:bg-slate-50/50">
-                                                            <td class="p-1 font-bold">Maria Lopez</td>
-                                                            <td class="p-1">$45.00</td>
-                                                            <td class="p-1"><span
-                                                                    class="px-1 py-0.2 rounded-full bg-amber-500/10 text-amber-600 font-bold text-[4.5px]">Pending</span>
-                                                            </td>
-                                                        </tr>
-                                                        <tr class="hover:bg-slate-50/50">
-                                                            <td class="p-1 font-bold">James Bond</td>
-                                                            <td class="p-1">$900.00</td>
-                                                            <td class="p-1"><span
-                                                                    class="px-1 py-0.2 rounded-full bg-red-500/10 text-red-600 font-bold text-[4.5px]">Failed</span>
-                                                            </td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. Sleek Phone Mockup (Filament Mobile View) -->
-                    <div
-                        class="works-mockup-phone absolute left-0 bottom-[-20px] w-[30%] h-[65%] bg-slate-950 rounded-[1.8rem] border-[6px] border-slate-950 shadow-[0_35px_70px_-15px_rgba(15,23,42,0.5)] overflow-hidden z-20 transition-all duration-500 group-hover:rotate-3 group-hover:scale-110 group-hover:-translate-y-4">
-                        <div class="w-full h-full relative bg-[#f3f4f6] overflow-hidden flex flex-col">
-                            <!-- Filament Mobile Card View -->
-                            <div
-                                class="w-full h-full text-[5.5px] leading-tight font-sans flex flex-col select-none overflow-y-auto text-slate-600">
-                                <!-- Top bar -->
-                                <div
-                                    class="bg-white border-b border-slate-100 px-2 py-1 flex items-center justify-between shrink-0 shadow-sm">
-                                    <svg class="w-2.5 h-2.5 text-slate-500" viewBox="0 0 24 24" fill="none"
-                                        stroke="currentColor" stroke-width="2">
-                                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                                    </svg>
-                                    <span class="font-extrabold text-slate-800 text-[6.5px]">Transactions</span>
-                                    <div
-                                        class="w-3.5 h-3.5 rounded-full bg-amber-500 flex items-center justify-center font-bold text-[5px] text-slate-900 border border-amber-400">
-                                        JD</div>
-                                </div>
-
-                                <!-- Cards List -->
-                                <div class="flex-1 p-2 space-y-1.5">
-                                    <!-- Card 1 -->
-                                    <div
-                                        class="bg-white p-1.5 rounded border border-slate-100 shadow-sm space-y-1 hover:border-amber-400 transition-colors cursor-pointer">
-                                        <div class="flex justify-between items-center">
-                                            <span class="font-bold text-slate-800 text-[6px]">Alex Rivera</span>
-                                            <span
-                                                class="px-1 py-0.2 rounded-full bg-green-500/10 text-green-600 font-bold text-[4.5px]">Paid</span>
-                                        </div>
-                                        <div class="flex justify-between items-center text-slate-400 text-[5px]">
-                                            <span>$120.00</span>
-                                            <span>10 mins ago</span>
-                                        </div>
-                                    </div>
-                                    <!-- Card 2 -->
-                                    <div
-                                        class="bg-white p-1.5 rounded border border-slate-100 shadow-sm space-y-1 hover:border-amber-400 transition-colors cursor-pointer">
-                                        <div class="flex justify-between items-center">
-                                            <span class="font-bold text-slate-800 text-[6px]">Maria Lopez</span>
-                                            <span
-                                                class="px-1 py-0.2 rounded-full bg-amber-500/10 text-amber-600 font-bold text-[4.5px]">Pending</span>
-                                        </div>
-                                        <div class="flex justify-between items-center text-slate-400 text-[5px]">
-                                            <span>$45.00</span>
-                                            <span>25 mins ago</span>
-                                        </div>
-                                    </div>
-                                    <!-- Card 3 -->
-                                    <div
-                                        class="bg-white p-1.5 rounded border border-slate-100 shadow-sm space-y-1 hover:border-amber-400 transition-colors cursor-pointer">
-                                        <div class="flex justify-between items-center">
-                                            <span class="font-bold text-slate-800 text-[6px]">James Bond</span>
-                                            <span
-                                                class="px-1 py-0.2 rounded-full bg-red-500/10 text-red-600 font-bold text-[4.5px]">Failed</span>
-                                        </div>
-                                        <div class="flex justify-between items-center text-slate-400 text-[5px]">
-                                            <span>$900.00</span>
-                                            <span>1 hour ago</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Old FAQ Section Moved -->
 
-    <!-- Tech Stack Section -->
-    <section class="py-24 bg-slate-900 border-t border-slate-800 overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="text-left mb-20 max-w-5xl" data-aos="fade-up">
-                <h2 data-i18n="tech_badge"
-                    class="fade-lang text-teal-400 font-bold tracking-widest uppercase text-sm mb-4">Tech Stack</h2>
-                <h3 data-i18n="tech_title"
-                    class="fade-lang text-5xl md:text-7xl lg:text-[5.5rem] font-black text-white tracking-tighter leading-[1.05]">
-                    Tools We
-                    Master.</h3>
-            </div>
-            <div class="space-y-8 overflow-hidden py-10 relative">
-                <!-- Fade Gradients for the sides -->
-                <div
-                    class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none">
-                </div>
-                <div
-                    class="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none">
-                </div>
-
-                <!-- Row 1: Frontend (Moves Left) -->
-                <div class="marquee-container relative flex w-full overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="100">
-                    <div class="flex w-max animate-marquee">
-                        <!-- Group 1 -->
-                        <div class="flex shrink-0 items-center gap-6 px-3">
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-slate-800/50 backdrop-blur-md border border-slate-700/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">React</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-slate-800/50 backdrop-blur-md border border-slate-700/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Vue.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-slate-800/50 backdrop-blur-md border border-slate-700/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Tailwind CSS</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-slate-800/50 backdrop-blur-md border border-slate-700/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Next.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Figma</span>
-                            </div>
-                            <!-- Duplicated internally to ensure width > screen -->
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">React</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Vue.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Tailwind CSS</span>
-                            </div>
-                        </div>
-                        <!-- Group 2 (Exact duplicate of Group 1 for seamless loop) -->
-                        <div class="flex shrink-0 items-center gap-6 px-3">
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">React</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Vue.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Tailwind CSS</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/nextdotjs/000000" alt="Next.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Next.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/figma/F24E1E" alt="Figma" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Figma</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">React</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/vuedotjs/4FC08D" alt="Vue.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Vue.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Tailwind CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 2: Backend (Moves Right) -->
-                <div class="marquee-container relative flex w-full overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="200">
-                    <div class="flex w-max animate-marquee-reverse">
-                        <!-- Group 1 -->
-                        <div class="flex shrink-0 items-center gap-6 px-3">
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Laravel</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Node.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Python</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Go</span>
-                            </div>
-                            <!-- Duplicated internally to ensure width > screen -->
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Laravel</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Node.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Python</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Go</span>
-                            </div>
-                        </div>
-                        <!-- Group 2 (Exact duplicate of Group 1) -->
-                        <div class="flex shrink-0 items-center gap-6 px-3">
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Laravel</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Node.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Python</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Go</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/laravel/FF2D20" alt="Laravel" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Laravel</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/nodedotjs/5FA04E" alt="Node.js" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Node.js</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Python</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/go/00ADD8" alt="Go" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Go</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 3: Cloud & DB (Moves Left) -->
-                <div class="marquee-container relative flex w-full overflow-hidden" data-aos="fade-up"
-                    data-aos-delay="300">
-                    <div class="flex w-max animate-marquee">
-                        <!-- Group 1 -->
-                        <div class="flex shrink-0 items-center gap-6 px-3">
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">PostgreSQL</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Redis</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                    alt="AWS" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">AWS</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Docker</span>
-                            </div>
-                            <!-- Duplicated internally to ensure width > screen -->
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">PostgreSQL</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Redis</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                    alt="AWS" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">AWS</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Docker</span>
-                            </div>
-                        </div>
-                        <!-- Group 2 (Exact duplicate of Group 1) -->
-                        <div class="flex shrink-0 items-center gap-6 px-3">
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">PostgreSQL</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Redis</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                    alt="AWS" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">AWS</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Docker</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL"
-                                    class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">PostgreSQL</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/redis/FF4438" alt="Redis" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Redis</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                    alt="AWS" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">AWS</span>
-                            </div>
-                            <div
-                                class="inline-flex items-center gap-3 px-10 py-4 bg-white/5 backdrop-blur-md border border-white/10 hover:bg-white/10 transition-colors hover:border-teal-400/50 rounded-full shadow-lg shrink-0 whitespace-nowrap">
-                                <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" class="w-8 h-8" />
-                                <span class="font-bold text-slate-300">Docker</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Paket Harga (Simple Pricing) -->
     <section class="py-32 bg-slate-50 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="text-left mb-20 max-w-5xl" data-aos="fade-up">
-                <div
-                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal-100 text-teal-700 font-bold text-sm mb-6">
-                    <i data-lucide="tag" class="w-4 h-4"></i>
-                    Estimasi Biaya
-                </div>
+            <div class="text-left mb-8 max-w-5xl" data-aos="fade-up">
                 <h3
                     class="text-5xl md:text-7xl lg:text-[5.5rem] font-black text-slate-900 tracking-tighter leading-[1.05]">
-                    Investasi Jangka <span class="text-teal-600">Panjang.</span></h3>
+                    <span data-i18n="price_title_1" class="fade-lang inline-flex items-center flex-wrap gap-3 md:gap-4">
+                        Biaya Terjangkau, 
+                    </span>
+                    <br class="hidden md:block">
+                    <span class="relative inline-flex flex-wrap items-center gap-4 md:gap-6 mt-2 md:mt-4">
+                        <span data-i18n="price_title_2" class="fade-lang text-teal-700">
+                            Hasil <span class="text-teal-600">Memukau.</span>
+                        </span>
+                        
+                        <div class="animate-float relative group cursor-default mt-2 md:mt-0">
+                            <div class="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 blur-md opacity-40 group-hover:opacity-70 transition-opacity duration-300 rounded-full"></div>
+                            <div class="relative flex items-center gap-2.5 bg-slate-900 text-white px-5 py-2 md:py-3 rounded-full rotate-[3deg] group-hover:rotate-0 group-hover:scale-105 transition-all duration-300 border border-slate-700 shadow-xl">
+                                <span class="relative flex h-3 w-3">
+                                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                                  <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-500"></span>
+                                </span>
+                                <span class="text-sm md:text-base font-bold tracking-wide uppercase">PROFESIONAL</span>
+                                <i data-lucide="award" class="w-4 h-4 md:w-5 md:h-5 text-amber-400"></i>
+                            </div>
+                        </div>
+                    </span>
+                </h3>
+                
+                <!-- Swipe Indicator (Mobile Only) -->
+                <div class="flex md:hidden items-center gap-2 mt-6 text-teal-600 font-medium animate-pulse" data-aos="fade-up" data-aos-delay="100">
+                    <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+                    <span data-i18n="price_swipe" class="fade-lang text-sm">Geser untuk melihat paket lain</span>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 pb-12 pt-4 px-4">
+            <style>
+                .hide-scrollbar::-webkit-scrollbar { display: none; }
+                .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+            </style>
+            <div class="flex md:grid md:grid-cols-3 gap-6 lg:gap-8 pb-12 pt-4 px-4 overflow-x-auto snap-x snap-mandatory hide-scrollbar">
 
                 <!-- Paket 1 -->
-                <div class="bg-white p-8 lg:p-10 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-all duration-300 relative flex flex-col group hover:border-teal-200"
+                <div class="w-full shrink-0 snap-center md:w-auto bg-white p-8 lg:p-10 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:-translate-y-2 transition-all duration-300 relative flex flex-col group hover:border-teal-200"
                     data-aos="fade-up">
-                    <h4 class="text-2xl font-bold text-slate-900 mb-2">Landing Page Promo</h4>
-                    <p class="text-slate-500 text-sm mb-6 h-10">Cocok untuk promosi produk/jasa spesifik & lead
+                    <h4 data-i18n="price_1_t" class="fade-lang text-2xl font-bold text-slate-900 mb-2">Landing Page Promo</h4>
+                    <p data-i18n="price_1_d" class="fade-lang text-slate-500 text-sm mb-6 h-10">Cocok untuk promosi produk/jasa spesifik & lead
                         generation cepat.</p>
                     <div class="mb-8">
                         <span class="text-slate-500 text-sm font-medium">Mulai dari</span><br>
                         <span class="text-4xl font-black text-slate-900">Rp 350rb</span>
                     </div>
                     <ul class="space-y-4 mb-10 text-sm text-slate-600 flex-1">
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-500 shrink-0"></i> <span>Desain 1 Halaman Premium &
-                                Kekinian</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-500 shrink-0"></i> <span>Copywriting Persuasif (Menjual)</span>
-                        </li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-500 shrink-0"></i> <span>Tombol Floating WhatsApp
-                                Interaktif</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-500 shrink-0"></i> <span>Mobile-First & Loading Super
-                                Cepat</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-500 shrink-0"></i> <span>Integrasi Facebook Pixel / Google
-                                Analytics Dasar</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-500 shrink-0"></i> <span data-i18n="price_1_f1" class="fade-lang">Desain 1 Halaman Premium & Kekinian</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-500 shrink-0"></i> <span data-i18n="price_1_f2" class="fade-lang">Copywriting Persuasif (Menjual)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-500 shrink-0"></i> <span data-i18n="price_1_f3" class="fade-lang">Tombol Floating WhatsApp Interaktif</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-500 shrink-0"></i> <span data-i18n="price_1_f4" class="fade-lang">Mobile-First & Loading Super Cepat</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-500 shrink-0"></i> <span data-i18n="price_1_f5" class="fade-lang">Integrasi Facebook Pixel / Google Analytics Dasar</span></li>
                     </ul>
                     <a href="javascript:void(0)" onclick="openCTAForm('Landing Page Promo')"
-                        class="block w-full py-4 text-center rounded-xl bg-teal-50 text-teal-600 font-bold hover:bg-teal-500 hover:text-white transition-colors mt-auto">Pilih
-                        Paket Ini</a>
+                        class="block w-full py-4 text-center rounded-xl bg-teal-50 text-teal-600 font-bold hover:bg-teal-500 hover:text-white transition-colors mt-auto"><span data-i18n="price_1_btn" class="fade-lang">Pilih Paket Ini</span></a>
                 </div>
 
                 <!-- Paket 2 -->
-                <div class="bg-slate-900 text-white p-8 lg:p-10 rounded-3xl border border-slate-800 shadow-2xl shadow-teal-900/20 hover:-translate-y-2 transition-all duration-300 relative flex flex-col group hover:shadow-teal-500/20"
+                <div class="w-full shrink-0 snap-center md:w-auto bg-slate-900 text-white p-8 lg:p-10 rounded-3xl border border-slate-800 shadow-2xl shadow-teal-900/20 hover:-translate-y-2 transition-all duration-300 relative flex flex-col group hover:shadow-teal-500/20"
                     data-aos="fade-up" data-aos-delay="100">
                     <div
                         class="absolute top-0 right-0 bg-gradient-to-r from-orange-400 to-orange-500 text-white text-[10px] font-bold px-4 py-1 rounded-bl-lg rounded-tr-3xl">
                         POPULER</div>
-                    <h4 class="text-2xl font-bold text-white mb-2">Company Profile</h4>
-                    <p class="text-slate-400 text-sm mb-6 h-10">Tingkatkan kredibilitas & profil profesional perusahaan
-                        Anda.</p>
+                    <h4 data-i18n="price_2_t" class="fade-lang text-2xl font-bold text-white mb-2">Company Profile</h4>
+                    <p data-i18n="price_2_d" class="fade-lang text-slate-400 text-sm mb-6 h-10">Tingkatkan kredibilitas & profil profesional perusahaan Anda.</p>
                     <div class="mb-8">
                         <span class="text-slate-400 text-sm font-medium">Mulai dari</span><br>
                         <span class="text-4xl font-black text-teal-400">Rp 750rb</span>
                     </div>
                     <ul class="space-y-4 mb-10 text-sm text-slate-300 flex-1">
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Maksimal 5 Halaman Dinamis &
-                                Eksklusif</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Galeri Portofolio & Bagian
-                                Testimoni</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Form Kontak Langsung Masuk ke
-                                Email</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Peta Lokasi Bisnis (Google Maps)
-                                Terintegrasi</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Optimasi SEO Dasar (On-Page) untuk
-                                Google</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_2_f1" class="fade-lang">Maksimal 5 Halaman Dinamis & Eksklusif</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_2_f2" class="fade-lang">Galeri Portofolio & Bagian Testimoni</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_2_f3" class="fade-lang">Form Kontak Langsung Masuk ke Email</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_2_f4" class="fade-lang">Peta Lokasi Bisnis (Google Maps) Terintegrasi</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_2_f5" class="fade-lang">Optimasi SEO Dasar (On-Page) untuk Google</span></li>
                     </ul>
                     <a href="javascript:void(0)" onclick="openCTAForm('Company Profile')"
-                        class="block w-full py-4 text-center rounded-xl bg-teal-500 text-white font-bold hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/30 mt-auto">Pilih
-                        Paket Ini</a>
+                        class="block w-full py-4 text-center rounded-xl bg-teal-500 text-white font-bold hover:bg-teal-400 transition-colors mt-auto shadow-[0_5px_20px_-5px_rgba(20,184,166,0.5)]"><span data-i18n="price_2_btn" class="fade-lang">Pilih Paket Ini</span></a>
                 </div>
 
                 <!-- Paket 3 -->
-                <div class="bg-gradient-to-br from-teal-900 to-slate-900 text-white p-8 lg:p-10 rounded-3xl border border-teal-800 shadow-2xl shadow-teal-900/30 hover:-translate-y-2 transition-all duration-300 relative flex flex-col group hover:shadow-teal-500/40"
+                <div class="w-full shrink-0 snap-center md:w-auto bg-gradient-to-br from-teal-900 to-slate-900 text-white p-8 lg:p-10 rounded-3xl border border-teal-800 shadow-2xl shadow-teal-900/30 hover:-translate-y-2 transition-all duration-300 relative flex flex-col group hover:shadow-teal-500/40"
                     data-aos="fade-up" data-aos-delay="200">
                     <div
                         class="absolute top-0 right-0 bg-teal-500 text-white text-[10px] font-bold px-4 py-1 rounded-bl-lg rounded-tr-3xl">
                         PREMIUM</div>
-                    <h4 class="text-2xl font-bold text-white mb-2">Custom Web App</h4>
-                    <p class="text-teal-200 text-sm mb-6 h-10">Solusi sistem SaaS atau Portal sesuai logika bisnis Anda.
-                    </p>
+                    <h4 data-i18n="price_3_t" class="fade-lang text-2xl font-bold text-white mb-2">Custom Web App</h4>
+                    <p data-i18n="price_3_d" class="fade-lang text-teal-200 text-sm mb-6 h-10">Solusi sistem SaaS atau Portal sesuai logika bisnis Anda.</p>
                     <div class="mb-8">
                         <span class="text-teal-200 text-sm font-medium">Mulai dari</span><br>
-                        <span class="text-4xl font-black text-white">Rp 4 Jt</span>
+                        <span class="text-4xl font-black text-white">Rp 1,5 Jt</span>
                     </div>
                     <ul class="space-y-4 mb-10 text-sm text-teal-50 flex-1">
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Sistem Kustom Berdasarkan Workflow
-                                Perusahaan</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Portal Internal & Manajemen
-                                Karyawan/HRD</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Keamanan Tingkat Lanjut (Advance
-                                Security)</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Integrasi API Pihak Ketiga (ERP, CRM,
-                                dll)</span></li>
-                        <li class="flex items-start gap-3"><i data-lucide="check"
-                                class="w-5 h-5 text-teal-400 shrink-0"></i> <span>Arsitektur Database Scalable untuk
-                                Jutaan User</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_3_f1" class="fade-lang">Sistem Kustom Berdasarkan Workflow Perusahaan</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_3_f2" class="fade-lang">Portal Internal & Manajemen Karyawan/HRD</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_3_f3" class="fade-lang">Keamanan Tingkat Lanjut (Advance Security)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_3_f4" class="fade-lang">Integrasi API Pihak Ketiga (ERP, CRM, dll)</span></li>
+                        <li class="flex items-start gap-3"><i data-lucide="check" class="w-5 h-5 text-teal-400 shrink-0"></i> <span data-i18n="price_3_f5" class="fade-lang">Arsitektur Database Scalable untuk Jutaan User</span></li>
                     </ul>
                     <a href="javascript:void(0)" onclick="openCTAForm('Custom Web App')"
-                        class="block w-full py-4 text-center rounded-xl bg-teal-500 text-white font-bold hover:bg-teal-400 transition-colors shadow-lg shadow-teal-500/30 mt-auto">Pilih
-                        Paket Ini</a>
+                        class="block w-full py-4 text-center rounded-xl bg-teal-500 text-white font-bold hover:bg-teal-400 transition-colors mt-auto shadow-[0_5px_20px_-5px_rgba(20,184,166,0.5)]"><span data-i18n="price_3_btn" class="fade-lang">Pilih Paket Ini</span></a>
                 </div>
 
             </div>
@@ -1627,21 +994,35 @@
         </div>
     </section>
     <!-- FAQ Section (Moved) -->
-    <section class="py-24 bg-white border-t border-gray-100">
-        <div class="max-w-4xl mx-auto px-6 lg:px-12">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 data-i18n="faq_badge"
-                    class="fade-lang text-teal-600 font-bold tracking-widest uppercase text-sm mb-3">FAQ</h2>
-                <h3 data-i18n="faq_title" class="fade-lang text-3xl md:text-5xl font-extrabold text-slate-900">Common
-                    Questions</h3>
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-5xl mx-auto px-6 lg:px-12">
+            <!-- Master FAQ Card -->
+            <div class="bg-white rounded-[2.5rem] border border-teal-100/50 shadow-[0_8px_40px_rgb(0,0,0,0.04)] p-8 md:p-12 lg:p-16 relative overflow-hidden" data-aos="fade-up">
+                
+                <!-- Background decorations -->
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-teal-50 blur-3xl opacity-60 pointer-events-none"></div>
+                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-teal-50 blur-3xl opacity-60 pointer-events-none"></div>
+
+                <div class="text-center mb-16 relative z-10">
+                <div class="flex justify-center mb-4">
+                    <div class="relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 text-teal-600">
+                        <!-- Custom spinning gear without center dot -->
+                        <svg class="absolute inset-0 w-full h-full animate-[spin_8s_linear_infinite] opacity-40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                        <!-- Static Question mark -->
+                        <span class="relative text-2xl md:text-3xl font-black mt-0.5">?</span>
+                    </div>
+                </div>
+                <h3 data-i18n="faq_title" class="fade-lang text-3xl md:text-5xl font-extrabold text-teal-600">Frequently Asked Questions</h3>
             </div>
 
-            <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="space-y-6 relative z-10">
                 <!-- FAQ Item 1 -->
-                <div class="faq-item p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                <div class="faq-item p-6 rounded-2xl bg-teal-50/50 border border-teal-100 hover:border-teal-300 transition-colors group cursor-pointer"
                     onclick="toggleAccordion(this, 'faq-content')">
                     <div class="flex justify-between items-center">
-                        <h4 data-i18n="q1" class="fade-lang font-bold text-lg text-slate-900 pr-8">What is the typical
+                        <h4 data-i18n="q1" class="fade-lang font-bold text-lg text-teal-900 pr-8">What is the typical
                             timeline for a custom project?</h4>
                         <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
@@ -1649,15 +1030,15 @@
                     </div>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
                         <p data-i18n="a1"
-                            class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">Depending on
+                            class="fade-lang text-teal-800/80 font-light mt-4 pt-4 border-t border-teal-200/50">Depending on
                             complexity, typical web platforms take between 4 to 8 weeks from discovery to launch.</p>
                     </div>
                 </div>
                 <!-- FAQ Item 2 -->
-                <div class="faq-item p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                <div class="faq-item p-6 rounded-2xl bg-teal-50/50 border border-teal-100 hover:border-teal-300 transition-colors group cursor-pointer"
                     onclick="toggleAccordion(this, 'faq-content')">
                     <div class="flex justify-between items-center">
-                        <h4 data-i18n="q2" class="fade-lang font-bold text-lg text-slate-900 pr-8">Do you offer
+                        <h4 data-i18n="q2" class="fade-lang font-bold text-lg text-teal-900 pr-8">Do you offer
                             post-launch support and maintenance?</h4>
                         <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
@@ -1665,16 +1046,16 @@
                     </div>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
                         <p data-i18n="a2"
-                            class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">Absolutely.
+                            class="fade-lang text-teal-800/80 font-light mt-4 pt-4 border-t border-teal-200/50">Absolutely.
                             We provide continuous maintenance packages to ensure your platform remains secure and
                             up-to-date.</p>
                     </div>
                 </div>
                 <!-- FAQ Item 3 -->
-                <div class="faq-item p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                <div class="faq-item p-6 rounded-2xl bg-teal-50/50 border border-teal-100 hover:border-teal-300 transition-colors group cursor-pointer"
                     onclick="toggleAccordion(this, 'faq-content')">
                     <div class="flex justify-between items-center">
-                        <h4 data-i18n="q3" class="fade-lang font-bold text-lg text-slate-900 pr-8">What technology stack
+                        <h4 data-i18n="q3" class="fade-lang font-bold text-lg text-teal-900 pr-8">What technology stack
                             do you specialize in?</h4>
                         <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
@@ -1682,16 +1063,16 @@
                     </div>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
                         <p data-i18n="a3"
-                            class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">We are
+                            class="fade-lang text-teal-800/80 font-light mt-4 pt-4 border-t border-teal-200/50">We are
                             experts in modern stacks including Laravel, Livewire, React, Tailwind CSS, and scalable
                             cloud infrastructures.</p>
                     </div>
                 </div>
                 <!-- FAQ Item 4 -->
-                <div class="faq-item p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                <div class="faq-item p-6 rounded-2xl bg-teal-50/50 border border-teal-100 hover:border-teal-300 transition-colors group cursor-pointer"
                     onclick="toggleAccordion(this, 'faq-content')">
                     <div class="flex justify-between items-center">
-                        <h4 data-i18n="q4" class="fade-lang font-bold text-lg text-slate-900 pr-8">Can you redesign our
+                        <h4 data-i18n="q4" class="fade-lang font-bold text-lg text-teal-900 pr-8">Can you redesign our
                             existing website?</h4>
                         <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
@@ -1699,16 +1080,16 @@
                     </div>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
                         <p data-i18n="a4"
-                            class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">Yes! We
+                            class="fade-lang text-teal-800/80 font-light mt-4 pt-4 border-t border-teal-200/50">Yes! We
                             specialize in redesigning legacy websites into modern, responsive platforms while preserving
                             your SEO rankings and migrating all existing content seamlessly.</p>
                     </div>
                 </div>
                 <!-- FAQ Item 5 -->
-                <div class="faq-item p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 transition-colors group cursor-pointer"
+                <div class="faq-item p-6 rounded-2xl bg-teal-50/50 border border-teal-100 hover:border-teal-300 transition-colors group cursor-pointer"
                     onclick="toggleAccordion(this, 'faq-content')">
                     <div class="flex justify-between items-center">
-                        <h4 data-i18n="q5" class="fade-lang font-bold text-lg text-slate-900 pr-8">How do you handle
+                        <h4 data-i18n="q5" class="fade-lang font-bold text-lg text-teal-900 pr-8">How do you handle
                             project communication?</h4>
                         <div class="icon-wrapper transition-transform duration-500 flex-shrink-0">
                             <i data-lucide="chevron-down" class="w-5 h-5 text-teal-600"></i>
@@ -1716,10 +1097,11 @@
                     </div>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out opacity-0">
                         <p data-i18n="a5"
-                            class="fade-lang text-gray-500 font-light mt-4 pt-4 border-t border-slate-200">We use
+                            class="fade-lang text-teal-800/80 font-light mt-4 pt-4 border-t border-teal-200/50">We use
                             real-time collaboration tools with weekly sprint reviews. You'll have a dedicated project
                             manager and access to our progress dashboard 24/7.</p>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

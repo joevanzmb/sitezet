@@ -1,5 +1,20 @@
 /* === Sitezet - Shared Global Styles === */
 
+/* Global Responsive Scaling */
+html {
+    font-size: 13px; /* Smaller base font for mobile */
+}
+@media (min-width: 640px) {
+    html {
+        font-size: 14px; /* Tablet */
+    }
+}
+@media (min-width: 1024px) {
+    html {
+        font-size: 16px; /* Desktop (Tailwind default) */
+    }
+}
+
 /* Language fade transition */
 .fade-lang {
     transition: opacity 0.3s ease-in-out;
@@ -463,3 +478,37 @@ body.menu-open {
     animation: marquee-reverse 40s linear infinite;
 }
 
+
+/* Sequential Flow Line Animation */
+@keyframes flow-sequence {
+    0%, 12.5% { transform: translateX(-100%); opacity: 0; }
+    12.6% { transform: translateX(-100%); opacity: 1; }
+    25% { transform: translateX(100%); opacity: 1; }
+    25.1%, 100% { transform: translateX(100%); opacity: 0; }
+}
+.animate-flow-sequence {
+    animation: none;
+}
+.aos-animate .animate-flow-sequence {
+    animation: flow-sequence 8s linear infinite;
+}
+
+/* Sequential Icon Pulse Animation */
+@keyframes icon-pulse-sequence {
+    0%, 5% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+    12.5% { transform: scale(1.15); box-shadow: 0 0 30px rgba(45,212,191,0.4); }
+    25%, 100% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+}
+.aos-animate .animate-icon-sequence {
+    animation: icon-pulse-sequence 8s ease-in-out infinite;
+}
+
+/* For the final card (Step 4) which has different base styling */
+@keyframes icon-pulse-sequence-final {
+    0%, 5% { transform: scale(1); box-shadow: 0 20px 25px -5px rgba(20,184,166,0.4); }
+    12.5% { transform: scale(1.15); box-shadow: 0 0 40px rgba(16,185,129,0.6); }
+    25%, 100% { transform: scale(1); box-shadow: 0 20px 25px -5px rgba(20,184,166,0.4); }
+}
+.aos-animate .animate-icon-sequence-final {
+    animation: icon-pulse-sequence-final 8s ease-in-out infinite;
+}
