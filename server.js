@@ -68,6 +68,10 @@ app.get('/works', (req, res) => {
   res.render('works', { currentRoute: '/works' });
 });
 
+app.get('/project-detail', (req, res) => {
+  res.render('project-detail', { currentRoute: '/works' });
+});
+
 app.get('/contact', (req, res) => {
   res.render('contact', { currentRoute: '/contact' });
 });
@@ -138,7 +142,7 @@ app.post('/admin/logos/delete/:id', requireAuth, (req, res) => {
 // Fallback for HTML extension just in case
 app.get('/:page.html', (req, res) => {
   const page = req.params.page;
-  const validPages = ['index', 'about', 'services', 'works', 'contact'];
+  const validPages = ['index', 'about', 'services', 'works', 'contact', 'project-detail'];
   if (validPages.includes(page)) {
     if (page === 'index') return res.redirect('/');
     res.redirect(`/${page}`);

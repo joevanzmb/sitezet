@@ -34,7 +34,8 @@ const translations = {
         srv_5_f1: "Anti-Hack & Malware Protection", srv_5_f2: "Regular Cloud Backups", srv_5_f3: "99.9% Uptime Guarantee",
         
         // Index - Why Us
-        why_title: 'Why choose <span class="text-teal-600 animate-pulse-glow">sitezet</span>',
+        why_title: 'Why choose <span class="text-teal-600">sitezet?</span>',
+        why_sub: 'Because at Sitezet, we deliver fast.',
         why_1_t: "Anti <br class='hidden lg:block'>Template <br class='hidden lg:block'>Club", why_1_d: "Not a generic template. We design it specifically tailored to your brand's unique identity.",
         why_2_t: "Lightning <br class='hidden lg:block'>Fast <br class='hidden lg:block'>Process", why_2_d: "Extremely fast workflow. Your website will be ready to launch in just 1-2 weeks.",
         why_3_t: "Drama-Free <br class='hidden lg:block'>Tech <br class='hidden lg:block'>Support", why_3_d: "Our technical support team is always ready to assist you whenever you face operational issues.",
@@ -115,8 +116,8 @@ const translations = {
 
         // Works page
         wrk_badge: "SELECTED WORKS",
-        wrk_hero_t1: "Product Gallery", wrk_hero_t2: '<span class="text-teal-600">Prestigious Digital</span>.',
-        wrk_desc: "Here are some iconic platforms we designed and built with world-class engineering standards. Prioritizing high performance, ease of integration, and premium visuals.",
+        wrk_hero_t1: "Product Gallery", wrk_hero_t2: "Prestigious Digital.",
+        wrk_desc: "Here is the track record of iconic platforms we designed. A perfect blend of high-end design aesthetics and scalable engineering architecture.",
         wrk_tag_1: "SaaS Dashboard", wrk_title_1: "ShopSync Platform", wrk_desc_1: "Automated inventory management system and multi-store (marketplace) integration in one intuitive premium dashboard.",
         wrk_tag_2: "Fintech Ecosystem", wrk_title_2: "Duitku Gateway Integration", wrk_desc_2: "Implementation of custom high-speed payment gateway architecture that guarantees 100% secure transactions.",
         wrk_tag_3: "Corporate System", wrk_title_3: "CSR System Portal", wrk_desc_3: "Large-scale global CSR program monitoring and management portal with high-accuracy real-time reporting dashboard.",
@@ -169,8 +170,9 @@ const translations = {
         srv_5_f1: "Anti-Retas & Perlindungan Malware", srv_5_f2: "Backup Cloud Berkala", srv_5_f3: "Jaminan Uptime 99.9%",
         
         // Index - Why Us
-        why_title: 'Kenapa harus <span class="text-teal-600 animate-pulse-glow">sitezet</span>',
-        why_1_t: "Anti <br class='hidden lg:block'>Template <br class='hidden lg:block'>Club", why_1_d: "Desain bukan template dan tidak pasaran, kami merancangnya khusus menyesuaikan dengan identitas brand Anda.",
+        why_title: 'Kenapa harus <span class="text-teal-600">sitezet?</span>',
+        why_sub: "Karena di Sitezet pasti satset.",
+        why_1_t: "Anti <br class='hidden lg:block'>Template <br class='hidden lg:block'>Club", why_1_d: "Desain bukan template dan tidak pasaran, kami merancangnya khusus menyesuaikan identitas brand Anda.",
         why_2_t: "Proses <br class='hidden lg:block'>Pengerjaan <br class='hidden lg:block'>Sat-Set", why_2_d: "Pengerjaan sangat cepat, website Anda akan siap untuk diluncurkan hanya dalam waktu 1-2 minggu saja.",
         why_3_t: "Dukungan <br class='hidden lg:block'>Bebas <br class='hidden lg:block'>Drama", why_3_d: "Tim dukungan teknis kami selalu siap membantu jika Anda mengalami kendala operasional kapan saja.",
         why_4_t: "Nggak <br class='hidden lg:block'>Bikin <br class='hidden lg:block'>Boncos", why_4_d: "Harga terjangkau karena misi kami adalah membantu para pelaku UMKM untuk segera go digital tanpa beban.",
@@ -250,8 +252,8 @@ const translations = {
 
         // Works page
         wrk_badge: "KARYA TERPILIH",
-        wrk_hero_t1: "Galeri Produk", wrk_hero_t2: '<span class="text-teal-600">Digital Prestisius</span>.',
-        wrk_desc: "Berikut adalah beberapa platform ikonik yang kami rancang dan bangun dengan standar rekayasa kelas dunia. Mengutamakan performa tinggi, kemudahan integrasi, dan visual berkelas.",
+        wrk_hero_t1: "Galeri Produk", wrk_hero_t2: "Digital Prestisius.",
+        wrk_desc: "Berikut adalah rekam jejak platform ikonik yang kami rancang. Perpaduan antara estetika desain tingkat tinggi dan arsitektur engineering yang skalabel.",
         wrk_tag_1: "SaaS Dashboard", wrk_title_1: "ShopSync Platform", wrk_desc_1: "Sistem manajemen stok otomatis dan integrasi multi-toko (marketplace) dalam satu dasbor premium yang intuitif.",
         wrk_tag_2: "Fintech Ecosystem", wrk_title_2: "Duitku Gateway Integration", wrk_desc_2: "Implementasi arsitektur gerbang pembayaran kustom berkecepatan tinggi yang menjamin keamanan transaksi 100% aman.",
         wrk_tag_3: "Corporate System", wrk_title_3: "CSR System Portal", wrk_desc_3: "Portal monitoring dan manajemen program CSR global berskala besar dengan dasbor pelaporan real-time berakurasi tinggi.",

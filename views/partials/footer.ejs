@@ -1,7 +1,7 @@
 <!-- Minimalist Dark Footer -->
-    <div class="bg-slate-50 pb-2 px-2 lg:pb-4 lg:px-4 flex flex-col items-center overflow-hidden">
+    <div class="bg-white pb-2 px-2 lg:pb-4 lg:px-4 flex flex-col items-center overflow-hidden">
         <!-- Giant Logo touching footer -->
-        <div class="w-full flex justify-center -mb-[3vw] lg:-mb-[2vw] z-0 pointer-events-none"
+        <div class="w-full flex justify-center -mb-[5vw] lg:-mb-[4vw] translate-y-[1vw] z-0 pointer-events-none"
             data-aos="fade-up" data-aos-duration="1000">
             <h2 class="text-[20vw] lg:text-[22vw] font-black tracking-normal leading-none select-none">
                 <span class="text-slate-900">site</span><span class="text-teal-500">zet</span>
@@ -91,6 +91,31 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Typed.js initialization moved to main.js (setLang)
+
+            // Set active navigation links dynamically
+            const currentPath = window.location.pathname;
+            const isHome = currentPath === '/' || currentPath.endsWith('index.html');
+            
+            document.querySelectorAll('.desktop-nav-link').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && ((isHome && href === 'index.html') || (!isHome && href !== 'index.html' && currentPath.includes(href.replace('.html', ''))))) {
+                    link.classList.remove('text-gray-500');
+                    link.classList.add('text-teal-600', 'font-bold');
+                }
+            });
+
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                const href = link.getAttribute('href');
+                if (href && ((isHome && href === 'index.html') || (!isHome && href !== 'index.html' && currentPath.includes(href.replace('.html', ''))))) {
+                    link.classList.remove('text-gray-500');
+                    link.classList.add('text-teal-600', 'bg-teal-50/50');
+                    const icon = link.querySelector('i');
+                    if(icon) {
+                        icon.classList.remove('text-gray-300');
+                        icon.classList.add('text-teal-500');
+                    }
+                }
+            });
         });
 
         // Accordion Interaction Logic
